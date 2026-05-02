@@ -1,0 +1,271 @@
+2026-04-30 22:01:03,879 [INFO] ============================================================
+2026-04-30 22:01:03,879 [INFO] STEP 1: SCRAPING TALABAT EGYPT
+2026-04-30 22:01:03,880 [INFO] ============================================================
+2026-04-30 22:01:03,880 [INFO] ====== WebDriver manager ======
+2026-04-30 22:01:04,902 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-30 22:01:05,705 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-30 22:01:06,324 [INFO] Driver [C:\Users\karim\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-30 22:02:38,814 [INFO] ============================================================
+2026-04-30 22:02:38,814 [INFO] STEP 1: SCRAPING TALABAT EGYPT
+2026-04-30 22:02:38,815 [INFO] ============================================================
+2026-04-30 22:02:38,815 [INFO] ====== WebDriver manager ======
+2026-04-30 22:02:40,427 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-30 22:02:41,086 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-30 22:02:41,770 [INFO] Driver [C:\Users\karim\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-30 22:02:42,941 [INFO]   Category: Burgers -> https://www.talabat.com/egypt/restaurants/burgers
+2026-04-30 22:02:52,483 [WARNING] Category Burgers failed: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=147.0.7727.103); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61e10]
+	chromedriver!(No symbol) [0xe50d8e]
+	chromedriver!(No symbol) [0xe6f8d9]
+	chromedriver!(No symbol) [0xed3dbc]
+	chromedriver!(No symbol) [0xeea3a9]
+	chromedriver!(No symbol) [0xecd606]
+	chromedriver!(No symbol) [0xea0039]
+	chromedriver!(No symbol) [0xea0df4]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1063c78+18e58]
+	chromedriver!GetHandleVerifier [0x1063e42+19022]
+	chromedriver!GetHandleVerifier [0x104d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,485 [INFO]   Category: Pizza -> https://www.talabat.com/egypt/restaurants/pizza
+2026-04-30 22:02:52,592 [WARNING] Category Pizza failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,593 [INFO]   Category: Shawarma -> https://www.talabat.com/egypt/restaurants/shawarma
+2026-04-30 22:02:52,595 [WARNING] Category Shawarma failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,595 [INFO]   Category: Sushi -> https://www.talabat.com/egypt/restaurants/sushi
+2026-04-30 22:02:52,597 [WARNING] Category Sushi failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,597 [INFO]   Category: Pasta -> https://www.talabat.com/egypt/restaurants/pasta
+2026-04-30 22:02:52,599 [WARNING] Category Pasta failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,599 [INFO]   Category: Desserts -> https://www.talabat.com/egypt/restaurants/desserts
+2026-04-30 22:02:52,601 [WARNING] Category Desserts failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,601 [INFO]   Category: Beverages -> https://www.talabat.com/egypt/restaurants/beverages
+2026-04-30 22:02:52,603 [WARNING] Category Beverages failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,603 [INFO]   Category: Sandwiches -> https://www.talabat.com/egypt/restaurants/sandwiches
+2026-04-30 22:02:52,605 [WARNING] Category Sandwiches failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,605 [INFO]   Category: Salads -> https://www.talabat.com/egypt/restaurants/salads
+2026-04-30 22:02:52,606 [WARNING] Category Salads failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,607 [INFO]   Category: Soups -> https://www.talabat.com/egypt/restaurants/soups
+2026-04-30 22:02:52,608 [WARNING] Category Soups failed: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x105b373+10553]
+	chromedriver!GetHandleVerifier [0x105b4a4+10684]
+	chromedriver!(No symbol) [0xe61c4e]
+	chromedriver!(No symbol) [0xe9f2c5]
+	chromedriver!(No symbol) [0xecd726]
+	chromedriver!(No symbol) [0xec8c62]
+	chromedriver!(No symbol) [0xec8281]
+	chromedriver!(No symbol) [0xe3501e]
+	chromedriver!(No symbol) [0xe355be]
+	chromedriver!(No symbol) [0xe35a9d]
+	chromedriver!GetHandleVerifier [0x12dddb4+292f94]
+	chromedriver!GetHandleVerifier [0x12d937d+28e55d]
+	chromedriver!GetHandleVerifier [0x12f8215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1074c18+29df8]
+	chromedriver!GetHandleVerifier [0x107c6fd+318dd]
+	chromedriver!(No symbol) [0xe34b99]
+	chromedriver!(No symbol) [0xe341e0]
+	chromedriver!GetHandleVerifier [0x1442bef+3f7dcf]
+	KERNEL32!BaseThreadInitThunk [0x76555d49+19]
+	ntdll!RtlInitializeExceptionChain [0x77add83b+6b]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x77add7c1+231]
+
+2026-04-30 22:02:52,608 [INFO] Unique restaurants: 0
+2026-04-30 22:02:54,671 [INFO] Browser closed.
+2026-04-30 22:02:54,685 [INFO] Saved 0 restaurants -> output/raw/restaurants.csv
+2026-04-30 22:02:54,685 [INFO] Saved 0 meals       -> output/raw/meals_raw.csv
+2026-04-30 22:02:54,686 [INFO] SCRAPING DONE
