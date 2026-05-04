@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+networkx
+mlxtend
+scikit-learn
+transformers
+torch
+beautifulsoup4
+requests
+jupyter
