@@ -10,3 +10,5 @@ torch
 beautifulsoup4
 requests
 jupyter
+streamlit
+plotly
