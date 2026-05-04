@@ -3,7 +3,6 @@ import re
 from itertools import combinations
 from collections import Counter
 
-import numpy as np
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -16,7 +15,6 @@ import networkx as nx
 
 st.set_page_config(
     page_title="Food Delivery Pattern Analysis",
-    page_icon="🍔",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -179,7 +177,6 @@ MEALS_PATH = os.path.join(PROCESSED_DIR, "meals_cleaned.csv")
 REVIEWS_PATH = os.path.join(PROCESSED_DIR, "reviews.csv")
 REVIEWS_SENTIMENT_PATH = os.path.join(PROCESSED_DIR, "reviews_with_sentiment.csv")
 ASSOCIATION_RULES_PATH = os.path.join(PROCESSED_DIR, "association_rules.csv")
-PAGERANK_PATH = os.path.join(PROCESSED_DIR, "pagerank_results.csv")
 
 
 # ============================================================
@@ -278,7 +275,7 @@ def prepare_rules(df):
 @st.cache_data(show_spinner=False)
 def build_pagerank_from_transactions(transactions_df):
     """
-    Rebuilds PageRank directly from transactions.csv using the exact same logic
+    Rebuilds PageRank directly from transactions.csv using the same logic
     as Task4_Visualization_Reporting.ipynb.
     This avoids mismatches caused by stale pagerank_results.csv files.
     """
@@ -296,10 +293,10 @@ def build_pagerank_from_transactions(transactions_df):
                     "category": meal_categories[i] if i < len(meal_categories) else "Unknown"
                 }
 
-    G = nx.Graph()
+    graph = nx.Graph()
 
     for meal_id, info in meal_lookup.items():
-        G.add_node(
+        graph.add_node(
             meal_id,
             meal_name=info["meal_name"],
             category=info["category"]
@@ -315,10 +312,10 @@ def build_pagerank_from_transactions(transactions_df):
                 edge_counter[(a, b)] += 1
 
     for (a, b), weight in edge_counter.items():
-        G.add_edge(a, b, weight=weight)
+        graph.add_edge(a, b, weight=weight)
 
     pagerank_scores = nx.pagerank(
-        G,
+        graph,
         alpha=0.85,
         weight="weight",
         max_iter=200
@@ -334,10 +331,10 @@ def build_pagerank_from_transactions(transactions_df):
             "meal_name": info.get("meal_name", meal_id),
             "category": info.get("category", "Unknown"),
             "pagerank_score": score,
-            "degree": G.degree(meal_id),
+            "degree": graph.degree(meal_id),
             "weighted_degree": sum(
                 edge_data["weight"]
-                for _, _, edge_data in G.edges(meal_id, data=True)
+                for _, _, edge_data in graph.edges(meal_id, data=True)
             )
         })
 
@@ -346,9 +343,9 @@ def build_pagerank_from_transactions(transactions_df):
     pagerank_df["rank"] = pagerank_df.index + 1
 
     graph_info = {
-        "nodes": G.number_of_nodes(),
-        "edges": G.number_of_edges(),
-        "is_connected": nx.is_connected(G) if G.number_of_nodes() > 0 else False
+        "nodes": graph.number_of_nodes(),
+        "edges": graph.number_of_edges(),
+        "is_connected": nx.is_connected(graph) if graph.number_of_nodes() > 0 else False
     }
 
     return pagerank_df, graph_info
@@ -455,6 +452,18 @@ def make_plotly_layout(fig, height=480):
     return fig
 
 
+def show_notebook_figure(title, filename):
+    """Display a saved notebook figure from the figures directory."""
+    fig_path = os.path.join(FIGURES_DIR, filename)
+
+    st.subheader(title)
+
+    if os.path.exists(fig_path):
+        st.image(fig_path, use_container_width=True)
+    else:
+        st.warning(f"Figure not found: {filename}")
+
+
 rules_df = prepare_rules(rules_df)
 pagerank_df, pagerank_graph_info = build_pagerank_from_transactions(transactions_df)
 sentiment_merged_df = prepare_sentiment()
@@ -465,33 +474,32 @@ recommendation_df = build_recommendation_table(pagerank_df, sentiment_df, meals_
 # Sidebar
 # ============================================================
 
-st.sidebar.markdown("## 🍔 Food Delivery")
+st.sidebar.markdown("## Food Delivery")
 st.sidebar.markdown("### Pattern Analysis")
 
-with st.sidebar.expander("📁 Data Status", expanded=True):
+with st.sidebar.expander("Data Status", expanded=True):
     st.write(f"Base directory: `{BASE_DIR}`")
-    st.write(f"Transactions: {'✅' if not transactions_df.empty else '❌'}")
-    st.write(f"Meals: {'✅' if not meals_df.empty else '❌'}")
-    st.write(f"Rules: {'✅' if not rules_df.empty else '❌'}")
-    st.write("PageRank: ✅ Rebuilt from transactions")
-    st.write(f"Sentiment: {'✅' if not sentiment_df.empty else '❌'}")
+    st.write(f"Transactions: {'Available' if not transactions_df.empty else 'Missing'}")
+    st.write(f"Meals: {'Available' if not meals_df.empty else 'Missing'}")
+    st.write(f"Rules: {'Available' if not rules_df.empty else 'Missing'}")
+    st.write("PageRank: Rebuilt from transactions")
+    st.write(f"Sentiment: {'Available' if not sentiment_df.empty else 'Missing'}")
 
 page = st.sidebar.radio(
     "Navigate",
     [
-        "🏠 Executive Overview",
-        "📊 EDA Dashboard",
-        "🔗 Association Rules",
-        "🌐 PageRank Network",
-        "💬 Sentiment Intelligence",
-        "⭐ Recommendation Engine",
-        "🖼️ Figure Gallery"
-    ],
-    label_visibility="collapsed"
+        "Executive Overview",
+        "EDA Dashboard",
+        "Association Rules",
+        "PageRank Network",
+        "Sentiment Intelligence",
+        "Recommendation Engine",
+        "Notebook Figures"
+    ]
 )
 
 st.sidebar.markdown("---")
-st.sidebar.caption("Built for Data Mining & Web Mining Project")
+st.sidebar.caption("Data Mining and Web Mining Project")
 
 
 # ============================================================
@@ -514,10 +522,10 @@ def hero(title, subtitle):
 # Page: Executive Overview
 # ============================================================
 
-if page == "🏠 Executive Overview":
+if page == "Executive Overview":
     hero(
         "Food Delivery Pattern Analysis",
-        "An interactive analytics dashboard combining transaction mining, PageRank network analysis, and BERT-based sentiment intelligence to support smarter meal recommendations."
+        "An interactive analytics dashboard combining transaction mining, PageRank network analysis, and sentiment intelligence to support smarter meal recommendations."
     )
 
     col1, col2, col3, col4 = st.columns(4)
@@ -531,7 +539,7 @@ if page == "🏠 Executive Overview":
     with col4:
         metric_card("Avg Rating", f"{transactions_df['order_rating'].mean():.2f}/5", "Order satisfaction")
 
-    st.markdown("### 🔥 Project Flow")
+    st.markdown("### Project Flow")
 
     flow_cols = st.columns(5)
     flow_items = [
@@ -555,7 +563,7 @@ if page == "🏠 Executive Overview":
                 unsafe_allow_html=True
             )
 
-    st.markdown("### 📌 Key Results")
+    st.markdown("### Key Results")
 
     result_cols = st.columns(4)
 
@@ -586,7 +594,7 @@ if page == "🏠 Executive Overview":
 # Page: EDA Dashboard
 # ============================================================
 
-elif page == "📊 EDA Dashboard":
+elif page == "EDA Dashboard":
     hero(
         "Exploratory Data Analysis",
         "Understand customer ordering behavior, category demand, order timing, payment preferences, ratings, and top-performing meals."
@@ -600,7 +608,7 @@ elif page == "📊 EDA Dashboard":
     category_counts = pd.Series(all_categories).value_counts().reset_index()
     category_counts.columns = ["Category", "Count"]
 
-    tab1, tab2, tab3 = st.tabs(["🔥 Popularity", "⏰ Time Patterns", "💳 Orders & Ratings"])
+    tab1, tab2, tab3 = st.tabs(["Popularity", "Time Patterns", "Orders and Ratings"])
 
     with tab1:
         col1, col2 = st.columns([1.15, 0.85])
@@ -699,12 +707,18 @@ elif page == "📊 EDA Dashboard":
             fig = make_plotly_layout(fig, 520)
             st.plotly_chart(fig, use_container_width=True)
 
+    st.markdown("---")
+    st.header("Notebook Figures")
+
+    show_notebook_figure("EDA Dashboard from Notebook", "01_eda_dashboard.png")
+    show_notebook_figure("Top Ordered Meals from Notebook", "02_top15_ordered_meals.png")
+
 
 # ============================================================
 # Page: Association Rules
 # ============================================================
 
-elif page == "🔗 Association Rules":
+elif page == "Association Rules":
     hero(
         "Association Rule Mining",
         "Discover meal combinations that appear together more often than expected using support, confidence, lift, and a reliability score."
@@ -741,7 +755,7 @@ elif page == "🔗 Association Rules":
             unsafe_allow_html=True
         )
 
-        tab1, tab2, tab3 = st.tabs(["🏆 Top Rules", "🎯 Rule Explorer", "📈 Quality Map"])
+        tab1, tab2, tab3 = st.tabs(["Top Rules", "Rule Explorer", "Quality Map"])
 
         with tab1:
             metric_choice = st.selectbox(
@@ -801,12 +815,20 @@ elif page == "🔗 Association Rules":
             fig = make_plotly_layout(fig, 650)
             st.plotly_chart(fig, use_container_width=True)
 
+        st.markdown("---")
+        st.header("Notebook Figures")
+
+        show_notebook_figure("Top Association Rules by Lift", "05_top10_association_rules_by_lift.png")
+        show_notebook_figure("Association Rules Scatter Plot", "06_association_rules_scatter.png")
+        show_notebook_figure("Association Rule Network", "07_association_rules_network.png")
+        show_notebook_figure("Top Reliable Association Rules", "08_top10_reliable_association_rules.png")
+
 
 # ============================================================
 # Page: PageRank Network
 # ============================================================
 
-elif page == "🌐 PageRank Network":
+elif page == "PageRank Network":
     hero(
         "PageRank Network Analysis",
         "Rank meals based on influence inside the co-ordering graph. Influential meals are highly connected to other important meals."
@@ -845,7 +867,7 @@ elif page == "🌐 PageRank Network":
             unsafe_allow_html=True
         )
 
-        tab1, tab2, tab3 = st.tabs(["🏆 Ranking", "📊 Category Analysis", "🧠 Influence Map"])
+        tab1, tab2, tab3 = st.tabs(["Ranking", "Category Analysis", "Influence Map"])
 
         with tab1:
             top_n = st.slider("Number of meals to show", 10, 50, 20)
@@ -915,14 +937,22 @@ elif page == "🌐 PageRank Network":
             fig = make_plotly_layout(fig, 650)
             st.plotly_chart(fig, use_container_width=True)
 
+        st.markdown("---")
+        st.header("Notebook Figures")
+
+        show_notebook_figure("Top PageRank Meals", "09_top20_pagerank_meals.png")
+        show_notebook_figure("PageRank by Category", "10_pagerank_by_category.png")
+        show_notebook_figure("PageRank vs Connectivity", "11_pagerank_vs_degree.png")
+        show_notebook_figure("PageRank Network Graph", "12_pagerank_network_graph.png")
+
 
 # ============================================================
 # Page: Sentiment Intelligence
 # ============================================================
 
-elif page == "💬 Sentiment Intelligence":
+elif page == "Sentiment Intelligence":
     hero(
-        "BERT-based Sentiment Intelligence",
+        "Sentiment Intelligence",
         "Analyze customer review sentiment and connect customer satisfaction to categories, meals, and recommendation quality."
     )
 
@@ -945,7 +975,7 @@ elif page == "💬 Sentiment Intelligence":
         with col3:
             metric_card("Avg Score", f"{sentiment_df['sentiment_score'].mean():.2f}", "Binary sentiment average")
 
-        tab1, tab2, tab3 = st.tabs(["📌 Overview", "🍽️ Meal Sentiment", "📂 Category Sentiment"])
+        tab1, tab2, tab3 = st.tabs(["Overview", "Meal Sentiment", "Category Sentiment"])
 
         with tab1:
             col1, col2 = st.columns(2)
@@ -1049,12 +1079,20 @@ elif page == "💬 Sentiment Intelligence":
 
                 st.dataframe(category_sentiment, use_container_width=True)
 
+        st.markdown("---")
+        st.header("Notebook Figures")
+
+        show_notebook_figure("Sentiment Distribution", "13_sentiment_distribution.png")
+        show_notebook_figure("Sentiment Score Distribution", "14_sentiment_score_distribution.png")
+        show_notebook_figure("Average Sentiment by Category", "15_avg_sentiment_by_category.png")
+        show_notebook_figure("Top Meals by Sentiment", "16_top15_meals_by_sentiment.png")
+
 
 # ============================================================
 # Page: Recommendation Engine
 # ============================================================
 
-elif page == "⭐ Recommendation Engine":
+elif page == "Recommendation Engine":
     hero(
         "Final Recommendation Engine",
         "A polished recommendation layer that combines network influence from PageRank with customer satisfaction from sentiment analysis."
@@ -1088,7 +1126,7 @@ elif page == "⭐ Recommendation Engine":
         with col3:
             metric_card("Sentiment", f"{recommendation_df.iloc[0]['avg_sentiment_score']:.2f}", "Average review score")
 
-        tab1, tab2, tab3 = st.tabs(["🏆 Top Recommendations", "🎛️ Interactive Filter", "🍱 Combo Builder"])
+        tab1, tab2, tab3 = st.tabs(["Top Recommendations", "Interactive Filter", "Combo Builder"])
 
         with tab1:
             top_n = st.slider("Number of recommendations", 10, 50, 15)
@@ -1174,37 +1212,60 @@ elif page == "⭐ Recommendation Engine":
                         use_container_width=True
                     )
 
+        st.markdown("---")
+        st.header("Notebook Figure")
+
+        show_notebook_figure("Final Recommendation Score", "17_final_recommendation_score.png")
+
 
 # ============================================================
-# Page: Figure Gallery
+# Page: Notebook Figures
 # ============================================================
 
-elif page == "🖼️ Figure Gallery":
+elif page == "Notebook Figures":
     hero(
-        "Report Figure Gallery",
-        "A central gallery for the most important report-ready figures generated by the analysis notebook."
+        "Notebook Figures",
+        "This section displays the original figures generated by the analysis notebook. These figures match the report outputs."
     )
 
-    if not os.path.exists(FIGURES_DIR):
-        st.warning("Figures directory does not exist.")
-    else:
-        image_files = [
-            f for f in os.listdir(FIGURES_DIR)
-            if f.lower().endswith((".png", ".jpg", ".jpeg"))
+    figure_groups = {
+        "Exploratory Data Analysis": [
+            "01_eda_dashboard.png",
+            "02_top15_ordered_meals.png",
+            "03_daily_orders_over_time.png",
+            "04_temporal_patterns.png"
+        ],
+        "Association Rule Mining": [
+            "05_top10_association_rules_by_lift.png",
+            "06_association_rules_scatter.png",
+            "07_association_rules_network.png",
+            "08_top10_reliable_association_rules.png"
+        ],
+        "PageRank Analysis": [
+            "09_top20_pagerank_meals.png",
+            "10_pagerank_by_category.png",
+            "11_pagerank_vs_degree.png",
+            "12_pagerank_network_graph.png"
+        ],
+        "Sentiment Analysis": [
+            "13_sentiment_distribution.png",
+            "14_sentiment_score_distribution.png",
+            "15_avg_sentiment_by_category.png",
+            "16_top15_meals_by_sentiment.png"
+        ],
+        "Recommendation System": [
+            "17_final_recommendation_score.png"
         ]
+    }
 
-        if not image_files:
-            st.info("No saved figures found.")
-        else:
-            selected_images = st.multiselect(
-                "Choose figures to display",
-                image_files,
-                default=image_files[:6]
-            )
+    for section, files in figure_groups.items():
+        st.header(section)
 
-            for img in selected_images:
-                st.markdown(f"### {img}")
-                st.image(os.path.join(FIGURES_DIR, img), use_container_width=True)
+        for file in files:
+            title = file.replace("_", " ").replace(".png", "").title()
+            show_notebook_figure(title, file)
+
+        st.markdown("---")
 
 
 # ============================================================
@@ -1214,7 +1275,7 @@ elif page == "🖼️ Figure Gallery":
 st.markdown(
     """
     <div class="footer">
-    Food Delivery Pattern Analysis · Association Rules · PageRank · BERT Sentiment · Recommendation System
+    Food Delivery Pattern Analysis | Association Rules | PageRank | Sentiment | Recommendation System
     </div>
     """,
     unsafe_allow_html=True
