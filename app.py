@@ -136,6 +136,101 @@ st.markdown(
         color: white !important;
     }
 
+
+    .premium-panel {
+        padding: 1.35rem;
+        border-radius: 24px;
+        background: rgba(255,255,255,0.96);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+        margin-bottom: 1.1rem;
+    }
+
+    .meal-hero {
+        padding: 1.8rem;
+        border-radius: 26px;
+        background:
+            radial-gradient(circle at top left, rgba(249,115,22,0.24), transparent 36%),
+            linear-gradient(135deg, #0f172a 0%, #1e293b 52%, #111827 100%);
+        color: white;
+        border: 1px solid rgba(255,255,255,0.12);
+        box-shadow: 0 25px 60px rgba(15,23,42,0.25);
+        margin: 1rem 0 1.2rem 0;
+    }
+
+    .meal-title {
+        font-size: 2.15rem;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1.1;
+    }
+
+    .meal-subtitle {
+        color: #cbd5e1;
+        margin-top: 0.45rem;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .pill {
+        display: inline-block;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        font-weight: 800;
+        font-size: 0.78rem;
+        margin-right: 0.35rem;
+        margin-top: 0.75rem;
+        border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .pill-positive { background: rgba(34,197,94,0.18); color: #86efac; }
+    .pill-negative { background: rgba(239,68,68,0.18); color: #fca5a5; }
+    .pill-mixed { background: rgba(249,115,22,0.18); color: #fdba74; }
+    .pill-neutral { background: rgba(148,163,184,0.18); color: #cbd5e1; }
+
+    .rec-card {
+        padding: 1.05rem 1.15rem;
+        border-radius: 18px;
+        background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: 0 10px 26px rgba(15,23,42,0.06);
+        margin-bottom: 0.7rem;
+    }
+
+    .rec-title {
+        font-weight: 800;
+        font-size: 1.05rem;
+        color: #0f172a;
+        margin-bottom: 0.25rem;
+    }
+
+    .rec-meta {
+        color: #64748b;
+        font-size: 0.88rem;
+        line-height: 1.55;
+    }
+
+    .score-line {
+        height: 9px;
+        width: 100%;
+        border-radius: 999px;
+        background: #e2e8f0;
+        overflow: hidden;
+        margin-top: 0.65rem;
+    }
+
+    .score-fill {
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #f97316, #ef4444);
+    }
+
+    .pro-note {
+        color: #475569;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
     .footer {
         color: #64748b;
         text-align: center;
@@ -465,8 +560,34 @@ def show_notebook_figure(title, filename):
 
 
 
+def normalize_text(value):
+    """Normalize text for search and matching."""
+    return str(value).strip().lower()
+
+
+def find_best_meal_match(query, meal_names):
+    """Return the best meal match from a typed query."""
+    query_norm = normalize_text(query)
+    if not query_norm:
+        return None
+
+    exact = [m for m in meal_names if normalize_text(m) == query_norm]
+    if exact:
+        return exact[0]
+
+    starts = [m for m in meal_names if normalize_text(m).startswith(query_norm)]
+    if starts:
+        return starts[0]
+
+    contains = [m for m in meal_names if query_norm in normalize_text(m)]
+    if contains:
+        return contains[0]
+
+    return None
+
+
 def get_meal_order_counts():
-    """Return order counts per meal name based on transactions."""
+    """Return order counts per meal name based on transactions.csv."""
     all_meals = split_items(transactions_df["item_names"])
     counts = pd.Series(all_meals).value_counts().reset_index()
     counts.columns = ["meal_name", "order_count"]
@@ -475,7 +596,7 @@ def get_meal_order_counts():
 
 
 def get_meal_sentiment_summary():
-    """Return sentiment summary aggregated by meal name and category."""
+    """Return sentiment summary aggregated by meal name and category using reviews_with_sentiment.csv."""
     if sentiment_merged_df.empty:
         return pd.DataFrame(columns=["meal_name", "category", "avg_sentiment_score", "review_count", "sentiment_label"])
 
@@ -502,7 +623,7 @@ def get_meal_sentiment_summary():
 
 
 def get_pagerank_summary_by_meal():
-    """Aggregate PageRank results by displayed meal name."""
+    """Aggregate PageRank results by meal name."""
     if pagerank_df.empty:
         return pd.DataFrame(columns=["meal_name", "category", "pagerank_score", "degree", "weighted_degree", "pagerank_rank"])
 
@@ -543,18 +664,20 @@ def get_recommendation_summary_by_meal():
 
 
 def get_meal_profile_table():
-    """Build one unified table for the meal explorer."""
+    """Build a unified meal profile table using project data only."""
     order_counts = get_meal_order_counts()
     sentiment_summary = get_meal_sentiment_summary()
     pagerank_summary = get_pagerank_summary_by_meal()
     recommendation_summary = get_recommendation_summary_by_meal()
 
     profile = order_counts.merge(sentiment_summary, on="meal_name", how="left")
+
     profile = profile.merge(
         pagerank_summary[["meal_name", "pagerank_score", "degree", "weighted_degree", "pagerank_rank"]],
         on="meal_name",
         how="left"
     )
+
     profile = profile.merge(
         recommendation_summary[["meal_name", "recommendation_score", "recommendation_rank"]],
         on="meal_name",
@@ -587,30 +710,35 @@ def get_co_ordered_meals(selected_meal, top_n=10):
     if not counter:
         return pd.DataFrame(columns=["Recommended Meal", "Co-order Count"])
 
-    out = pd.DataFrame(counter.most_common(top_n), columns=["Recommended Meal", "Co-order Count"])
-    return out
+    return pd.DataFrame(counter.most_common(top_n), columns=["Recommended Meal", "Co-order Count"])
+
+
+def parse_meal_list(text_value):
+    """Parse a comma-separated meal list from association rules."""
+    if pd.isna(text_value):
+        return []
+    return [x.strip() for x in str(text_value).split(",") if x.strip()]
 
 
 def get_rule_based_recommendations(selected_meal, top_n=10):
-    """Recommend meals from association rules where selected meal appears on the left-hand side."""
+    """Recommend meals from association rules where selected meal appears in the antecedent side."""
     if rules_df.empty:
         return pd.DataFrame(columns=["Recommended Meal", "Rule", "support", "confidence", "lift", "reliability_score"])
 
     recs = []
 
     for _, row in rules_df.iterrows():
-        antecedents_text = str(row.get("antecedents_str", ""))
-        consequents_text = str(row.get("consequents_str", ""))
+        antecedents_text = row.get("antecedents_str", "")
+        consequents_text = row.get("consequents_str", "")
 
-        # Fallback if string columns are missing
-        if not antecedents_text or antecedents_text == "nan":
+        if not antecedents_text or str(antecedents_text) == "nan":
             rule_text = str(row.get("rule", ""))
             if "→" in rule_text:
                 antecedents_text = rule_text.split("→")[0].strip()
                 consequents_text = rule_text.split("→")[1].strip()
 
-        antecedents = [x.strip() for x in antecedents_text.split(",") if x.strip()]
-        consequents = [x.strip() for x in consequents_text.split(",") if x.strip()]
+        antecedents = parse_meal_list(antecedents_text)
+        consequents = parse_meal_list(consequents_text)
 
         if selected_meal in antecedents:
             for meal in consequents:
@@ -638,7 +766,7 @@ def get_rule_based_recommendations(selected_meal, top_n=10):
 
 
 def get_hybrid_recommendations(selected_meal, top_n=10):
-    """Recommend meals using same category + final recommendation score, excluding the selected meal."""
+    """Recommend high-scoring meals from the same category, then fallback to global top recommendations."""
     rec_summary = get_recommendation_summary_by_meal()
     profile = get_meal_profile_table()
 
@@ -653,20 +781,15 @@ def get_hybrid_recommendations(selected_meal, top_n=10):
         (rec_summary["meal_name"] != selected_meal)
     ].copy()
 
-    if len(same_category) < top_n:
-        fallback = rec_summary[
-            rec_summary["meal_name"] != selected_meal
-        ].copy()
-        combined = pd.concat([same_category, fallback], ignore_index=True)
-        combined = combined.drop_duplicates(subset=["meal_name"])
-    else:
-        combined = same_category
+    fallback = rec_summary[rec_summary["meal_name"] != selected_meal].copy()
+    combined = pd.concat([same_category, fallback], ignore_index=True)
+    combined = combined.drop_duplicates(subset=["meal_name"])
 
     return combined.sort_values("recommendation_score", ascending=False).head(top_n).reset_index(drop=True)
 
 
 def sentiment_badge(label):
-    """Return a clean sentiment label for display."""
+    """Return a clean sentiment explanation for display."""
     if label == "Positive":
         return "Positive customer feedback"
     if label == "Negative":
@@ -674,6 +797,69 @@ def sentiment_badge(label):
     if label == "Mixed":
         return "Mixed customer feedback"
     return "No sentiment data available"
+
+
+def format_percent(value):
+    try:
+        return f"{float(value) * 100:.1f}%"
+    except Exception:
+        return "N/A"
+
+
+def render_recommendation_cards(df, title_col, score_col=None, meta_cols=None, limit=5):
+    """Render premium recommendation cards."""
+    if df.empty:
+        st.info("No recommendations available for this selection.")
+        return
+
+    meta_cols = meta_cols or []
+
+    for _, row in df.head(limit).iterrows():
+        title = row.get(title_col, "Recommended Meal")
+        score_html = ""
+
+        if score_col and score_col in row:
+            try:
+                score = float(row[score_col])
+                width = max(0, min(score, 1)) * 100
+                score_html = f"""
+                <div class="score-line">
+                    <div class="score-fill" style="width:{width:.1f}%"></div>
+                </div>
+                """
+            except Exception:
+                score_html = ""
+
+        meta_parts = []
+        for col in meta_cols:
+            if col in row:
+                value = row[col]
+                if isinstance(value, float):
+                    value = f"{value:.4f}"
+                meta_parts.append(f"{col.replace('_', ' ').title()}: {value}")
+
+        meta_text = " | ".join(meta_parts)
+
+        st.markdown(
+            f"""
+            <div class="rec-card">
+                <div class="rec-title">{title}</div>
+                <div class="rec-meta">{meta_text}</div>
+                {score_html}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+
+def sentiment_class(label):
+    if label == "Positive":
+        return "pill-positive"
+    if label == "Negative":
+        return "pill-negative"
+    if label == "Mixed":
+        return "pill-mixed"
+    return "pill-neutral"
 
 
 rules_df = prepare_rules(rules_df)
@@ -1302,14 +1488,15 @@ elif page == "Sentiment Intelligence":
 
 
 
+
 # ============================================================
 # Page: Meal Explorer
 # ============================================================
 
 elif page == "Meal Explorer":
     hero(
-        "Meal Explorer",
-        "Search for a meal to view its sentiment, popularity, PageRank influence, and personalized recommendations based on the project data."
+        "Meal Intelligence Center",
+        "A professional meal-level decision panel that combines sentiment, order behavior, association rules, PageRank influence, and final recommendation scoring."
     )
 
     meal_profile = get_meal_profile_table()
@@ -1318,7 +1505,7 @@ elif page == "Meal Explorer":
         st.markdown(
             """
             <div class="warning-box">
-            Meal profile could not be built. Please check transactions, sentiment, and meal files.
+            Meal profile could not be built. Please check transactions, meals, sentiment, and association rule files.
             </div>
             """,
             unsafe_allow_html=True
@@ -1326,56 +1513,150 @@ elif page == "Meal Explorer":
     else:
         all_meals = sorted(meal_profile["meal_name"].dropna().unique().tolist())
 
-        col_search, col_filter = st.columns([2, 1])
+        st.markdown('<div class="premium-panel">', unsafe_allow_html=True)
+        st.markdown("### Search and Select Meal")
+
+        col_search, col_select, col_topn = st.columns([1.35, 1.55, 0.75])
 
         with col_search:
-            selected_meal = st.selectbox(
-                "Enter or choose a meal",
-                all_meals,
-                index=all_meals.index("Mint Lemonade") if "Mint Lemonade" in all_meals else 0
+            typed_meal = st.text_input(
+                "Type a meal name",
+                placeholder="Example: Mint Lemonade, Pepperoni Pizza, Iced Latte"
             )
 
-        with col_filter:
-            top_n = st.slider("Number of recommendations", 5, 20, 10)
+        matched_meal = find_best_meal_match(typed_meal, all_meals) if typed_meal.strip() else None
+        default_meal = matched_meal if matched_meal else ("Mint Lemonade" if "Mint Lemonade" in all_meals else all_meals[0])
+
+        with col_select:
+            selected_meal = st.selectbox(
+                "Confirmed meal",
+                all_meals,
+                index=all_meals.index(default_meal)
+            )
+
+        with col_topn:
+            top_n = st.slider("Results", 5, 20, 10)
+
+        if typed_meal.strip() and matched_meal is None:
+            st.warning("No exact or partial meal match was found. Please choose a meal from the dropdown.")
+        elif typed_meal.strip() and matched_meal:
+            st.success(f"Matched meal: {matched_meal}")
+
+        st.markdown('</div>', unsafe_allow_html=True)
 
         selected_info = meal_profile[meal_profile["meal_name"] == selected_meal].iloc[0]
-
-        st.markdown("### Meal Profile")
-
-        col1, col2, col3, col4 = st.columns(4)
-
-        with col1:
-            metric_card("Selected Meal", selected_meal, selected_info["category"])
-        with col2:
-            metric_card("Sentiment", selected_info["sentiment_label"], sentiment_badge(selected_info["sentiment_label"]))
-        with col3:
-            metric_card("Order Count", f"{int(selected_info['order_count']):,}", f"Popularity rank: {int(selected_info['popularity_rank'])}")
-        with col4:
-            metric_card("Recommendation Score", f"{selected_info['recommendation_score']:.2f}", "Combined PageRank and sentiment")
+        sentiment_label = selected_info["sentiment_label"]
+        pill_class = sentiment_class(sentiment_label)
 
         st.markdown(
             f"""
-            <div class="insight-box">
-            <b>Meal Insight:</b> <b>{selected_meal}</b> belongs to the <b>{selected_info['category']}</b> category.
-            It has an average sentiment score of <b>{selected_info['avg_sentiment_score']:.2f}</b> based on
-            <b>{int(selected_info['review_count'])}</b> reviews. Its PageRank score is
-            <b>{selected_info['pagerank_score']:.5f}</b>, which measures its influence in the co-ordering network.
+            <div class="meal-hero">
+                <div class="meal-title">{selected_meal}</div>
+                <div class="meal-subtitle">
+                    Category: <b>{selected_info['category']}</b> |
+                    Orders: <b>{int(selected_info['order_count']):,}</b> |
+                    Reviews: <b>{int(selected_info['review_count']):,}</b> |
+                    PageRank: <b>{selected_info['pagerank_score']:.5f}</b> |
+                    Recommendation Score: <b>{selected_info['recommendation_score']:.2f}</b>
+                </div>
+                <span class="pill {pill_class}">{sentiment_label} Sentiment</span>
+                <span class="pill pill-neutral">Popularity Rank #{int(selected_info['popularity_rank'])}</span>
             </div>
             """,
             unsafe_allow_html=True
         )
 
-        tab1, tab2, tab3, tab4 = st.tabs([
-            "Sentiment Details",
-            "Co-ordered Meals",
-            "Rule-based Recommendations",
+        col1, col2, col3, col4, col5 = st.columns(5)
+
+        with col1:
+            metric_card("Sentiment", selected_info["sentiment_label"], sentiment_badge(selected_info["sentiment_label"]))
+        with col2:
+            metric_card("Avg Sentiment", f"{selected_info['avg_sentiment_score']:.2f}", "Range: -1 to 1")
+        with col3:
+            metric_card("Order Count", f"{int(selected_info['order_count']):,}", "Transactions")
+        with col4:
+            metric_card("PageRank", f"{selected_info['pagerank_score']:.5f}", f"Rank: {int(selected_info['pagerank_rank']) if not pd.isna(selected_info.get('pagerank_rank', None)) else 'N/A'}")
+        with col5:
+            metric_card("Final Score", f"{selected_info['recommendation_score']:.2f}", "Recommendation strength")
+
+        st.markdown(
+            f"""
+            <div class="insight-box">
+            <b>Decision Insight:</b> <b>{selected_meal}</b> is classified as <b>{selected_info['sentiment_label']}</b>
+            based on its average customer sentiment score. The recommendation system combines this sentiment with
+            PageRank influence from the co-ordering network, making the final score more balanced than popularity alone.
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+        tab1, tab2, tab3, tab4, tab5 = st.tabs([
+            "Overview",
+            "Sentiment Evidence",
+            "Co-order Patterns",
+            "Association Recommendations",
             "Final Recommendations"
         ])
 
         with tab1:
-            sentiment_row = meal_profile[meal_profile["meal_name"] == selected_meal].copy()
+            st.markdown("### Meal Performance Overview")
 
-            gauge_value = float(selected_info["avg_sentiment_score"])
+            overview_df = pd.DataFrame({
+                "Metric": [
+                    "Meal Name",
+                    "Category",
+                    "Sentiment Label",
+                    "Average Sentiment Score",
+                    "Review Count",
+                    "Order Count",
+                    "Popularity Rank",
+                    "PageRank Score",
+                    "PageRank Degree",
+                    "Weighted Degree",
+                    "Final Recommendation Score"
+                ],
+                "Value": [
+                    selected_meal,
+                    selected_info["category"],
+                    selected_info["sentiment_label"],
+                    f"{selected_info['avg_sentiment_score']:.3f}",
+                    f"{int(selected_info['review_count']):,}",
+                    f"{int(selected_info['order_count']):,}",
+                    f"{int(selected_info['popularity_rank'])}",
+                    f"{selected_info['pagerank_score']:.6f}",
+                    f"{int(selected_info['degree'])}",
+                    f"{int(selected_info['weighted_degree'])}",
+                    f"{selected_info['recommendation_score']:.3f}"
+                ]
+            })
+
+            st.dataframe(overview_df, use_container_width=True, hide_index=True)
+
+            profile_slice = pd.DataFrame({
+                "Score Component": ["Sentiment", "PageRank", "Recommendation"],
+                "Value": [
+                    (selected_info["avg_sentiment_score"] + 1) / 2,
+                    selected_info["pagerank_score"] / max(meal_profile["pagerank_score"].max(), 1e-9),
+                    selected_info["recommendation_score"]
+                ]
+            })
+
+            fig = px.bar(
+                profile_slice,
+                x="Score Component",
+                y="Value",
+                color="Score Component",
+                title=f"Normalized Score Components for {selected_meal}",
+                text=profile_slice["Value"].round(3)
+            )
+            fig.update_yaxes(range=[0, 1])
+            fig = make_plotly_layout(fig, 440)
+            st.plotly_chart(fig, use_container_width=True)
+
+        with tab2:
+            st.markdown("### Sentiment Evidence")
+
+            sentiment_row = meal_profile[meal_profile["meal_name"] == selected_meal].copy()
 
             fig = px.bar(
                 sentiment_row,
@@ -1383,7 +1664,7 @@ elif page == "Meal Explorer":
                 y="avg_sentiment_score",
                 color="sentiment_label",
                 hover_data=["review_count", "category"],
-                title=f"Sentiment Score for {selected_meal}",
+                title=f"Average Sentiment Score for {selected_meal}",
                 color_discrete_map={
                     "Positive": "#22c55e",
                     "Negative": "#ef4444",
@@ -1395,24 +1676,38 @@ elif page == "Meal Explorer":
             fig = make_plotly_layout(fig, 420)
             st.plotly_chart(fig, use_container_width=True)
 
-            sentiment_reviews = pd.DataFrame()
-
-            if not sentiment_merged_df.empty:
-                sentiment_reviews = sentiment_merged_df[
+            if sentiment_merged_df.empty:
+                st.info("No detailed sentiment data is available.")
+            else:
+                sample_reviews = sentiment_merged_df[
                     sentiment_merged_df["meal_name"] == selected_meal
                 ][["review_id", "review_text", "sentiment", "sentiment_score"]].head(10)
 
-            if sentiment_reviews.empty:
-                st.info("No detailed reviews found for this meal.")
-            else:
-                st.subheader("Sample Reviews")
-                st.dataframe(sentiment_reviews, use_container_width=True)
+                if sample_reviews.empty:
+                    st.info("No review text found for this meal.")
+                else:
+                    st.subheader("Review Samples")
+                    for _, review in sample_reviews.iterrows():
+                        review_label = str(review["sentiment"]).title()
+                        score = review["sentiment_score"]
+                        text = str(review["review_text"])
+                        st.markdown(
+                            f"""
+                            <div class="rec-card">
+                                <div class="rec-title">{review_label} | Score: {score}</div>
+                                <div class="rec-meta">{text}</div>
+                            </div>
+                            """,
+                            unsafe_allow_html=True
+                        )
 
-        with tab2:
+        with tab3:
+            st.markdown("### Co-order Patterns")
+
             co_ordered = get_co_ordered_meals(selected_meal, top_n=top_n)
 
             if co_ordered.empty:
-                st.info("No co-ordered meals found for this selection.")
+                st.info("No co-ordered meals were found for this selection.")
             else:
                 fig = px.bar(
                     co_ordered.sort_values("Co-order Count"),
@@ -1423,16 +1718,24 @@ elif page == "Meal Explorer":
                     color_continuous_scale="Oranges",
                     title=f"Meals Most Frequently Ordered with {selected_meal}"
                 )
-                fig = make_plotly_layout(fig, 520)
+                fig = make_plotly_layout(fig, 540)
                 st.plotly_chart(fig, use_container_width=True)
 
-                st.dataframe(co_ordered, use_container_width=True)
+                render_recommendation_cards(
+                    co_ordered,
+                    title_col="Recommended Meal",
+                    score_col=None,
+                    meta_cols=["Co-order Count"],
+                    limit=top_n
+                )
 
-        with tab3:
+        with tab4:
+            st.markdown("### Association Rule Recommendations")
+
             rule_recs = get_rule_based_recommendations(selected_meal, top_n=top_n)
 
             if rule_recs.empty:
-                st.info("No direct association rules found for this meal. Try another meal or use the final recommendations tab.")
+                st.info("No direct association rules were found for this meal. Use co-ordered or final recommendations instead.")
             else:
                 fig = px.bar(
                     rule_recs.sort_values("confidence"),
@@ -1444,19 +1747,30 @@ elif page == "Meal Explorer":
                     hover_data=["support", "lift", "reliability_score"],
                     title=f"Association Rule Recommendations for {selected_meal}"
                 )
-                fig = make_plotly_layout(fig, 540)
+                fig = make_plotly_layout(fig, 560)
                 st.plotly_chart(fig, use_container_width=True)
 
-                st.dataframe(
-                    rule_recs[["Recommended Meal", "support", "confidence", "lift", "reliability_score", "Rule"]],
-                    use_container_width=True
+                render_recommendation_cards(
+                    rule_recs,
+                    title_col="Recommended Meal",
+                    score_col="confidence",
+                    meta_cols=["confidence", "lift", "support", "reliability_score"],
+                    limit=top_n
                 )
 
-        with tab4:
+                with st.expander("Detailed Association Rule Table"):
+                    st.dataframe(
+                        rule_recs[["Recommended Meal", "support", "confidence", "lift", "reliability_score", "Rule"]],
+                        use_container_width=True
+                    )
+
+        with tab5:
+            st.markdown("### Final Recommendation Output")
+
             hybrid_recs = get_hybrid_recommendations(selected_meal, top_n=top_n)
 
             if hybrid_recs.empty:
-                st.info("No final recommendations available.")
+                st.info("No final recommendations are available.")
             else:
                 fig = px.bar(
                     hybrid_recs.sort_values("recommendation_score"),
@@ -1467,23 +1781,32 @@ elif page == "Meal Explorer":
                     hover_data=["pagerank_score", "avg_sentiment_score", "review_count"],
                     title=f"Final Recommendations Related to {selected_meal}"
                 )
-                fig = make_plotly_layout(fig, 560)
+                fig = make_plotly_layout(fig, 580)
                 st.plotly_chart(fig, use_container_width=True)
 
-                st.dataframe(
-                    hybrid_recs[
-                        [
-                            "meal_name",
-                            "category",
-                            "recommendation_score",
-                            "pagerank_score",
-                            "avg_sentiment_score",
-                            "review_count"
-                        ]
-                    ],
-                    use_container_width=True
+                cards_df = hybrid_recs.rename(columns={"meal_name": "Recommended Meal"})
+                render_recommendation_cards(
+                    cards_df,
+                    title_col="Recommended Meal",
+                    score_col="recommendation_score",
+                    meta_cols=["category", "recommendation_score", "pagerank_score", "avg_sentiment_score", "review_count"],
+                    limit=top_n
                 )
 
+                with st.expander("Detailed Final Recommendation Table"):
+                    st.dataframe(
+                        hybrid_recs[
+                            [
+                                "meal_name",
+                                "category",
+                                "recommendation_score",
+                                "pagerank_score",
+                                "avg_sentiment_score",
+                                "review_count"
+                            ]
+                        ],
+                        use_container_width=True
+                    )
 
 # ============================================================
 # Page: Recommendation Engine
