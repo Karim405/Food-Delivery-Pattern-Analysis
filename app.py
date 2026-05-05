@@ -367,6 +367,276 @@ def prepare_rules(df):
     return out
 
 
+
+def build_transaction_matrix_from_orders(transactions_df):
+    """
+    Build one-hot encoded transaction matrix from transactions.csv.
+    Each row represents one order and each column represents one meal.
+    """
+    from mlxtend.preprocessing import TransactionEncoder
+
+    transaction_lists = []
+
+    for value in transactions_df["item_names"].dropna():
+        meals = [x.strip() for x in str(value).split(",") if x.strip()]
+        if meals:
+            transaction_lists.append(meals)
+
+    encoder = TransactionEncoder()
+    encoded = encoder.fit(transaction_lists).transform(transaction_lists)
+    encoded_df = pd.DataFrame(encoded, columns=encoder.columns_)
+
+    return encoded_df, transaction_lists
+
+
+def format_mined_rules(rules_df):
+    """
+    Convert mlxtend association rules output into the same readable structure
+    used across the project.
+    """
+    if rules_df.empty:
+        return rules_df
+
+    out = rules_df.copy()
+
+    out["antecedents_str"] = out["antecedents"].apply(lambda x: ", ".join(sorted(list(x))))
+    out["consequents_str"] = out["consequents"].apply(lambda x: ", ".join(sorted(list(x))))
+    out["rule"] = out["antecedents_str"] + " → " + out["consequents_str"]
+
+    out["reliability_score"] = out["support"] * out["confidence"] * out["lift"]
+
+    preferred_cols = [
+        "rule",
+        "antecedents_str",
+        "consequents_str",
+        "support",
+        "confidence",
+        "lift",
+        "reliability_score",
+        "antecedent support",
+        "consequent support",
+        "leverage",
+        "conviction",
+        "zhangs_metric"
+    ]
+
+    available_cols = [c for c in preferred_cols if c in out.columns]
+    return out[available_cols].sort_values(
+        ["reliability_score", "lift", "confidence"],
+        ascending=False
+    ).reset_index(drop=True)
+
+
+@st.cache_data(show_spinner=False)
+def run_apriori_from_transactions(transactions_df, min_support=0.001, min_confidence=0.10, max_len=4):
+    """
+    Run Apriori on the transaction dataset.
+    This is separate from FP-Growth so the GUI can compare both algorithms.
+    """
+    from mlxtend.frequent_patterns import apriori, association_rules
+
+    encoded_df, transaction_lists = build_transaction_matrix_from_orders(transactions_df)
+
+    frequent_itemsets = apriori(
+        encoded_df,
+        min_support=min_support,
+        use_colnames=True,
+        max_len=max_len
+    )
+
+    if frequent_itemsets.empty:
+        return frequent_itemsets, pd.DataFrame(), len(transaction_lists), encoded_df.shape
+
+    rules = association_rules(
+        frequent_itemsets,
+        metric="confidence",
+        min_threshold=min_confidence
+    )
+
+    rules = format_mined_rules(rules)
+
+    return frequent_itemsets, rules, len(transaction_lists), encoded_df.shape
+
+
+@st.cache_data(show_spinner=False)
+def run_fpgrowth_from_transactions(transactions_df, min_support=0.001, min_confidence=0.10, max_len=4):
+    """
+    Run FP-Growth on the transaction dataset.
+    FP-Growth usually scales better than Apriori on larger transaction datasets.
+    """
+    from mlxtend.frequent_patterns import fpgrowth, association_rules
+
+    encoded_df, transaction_lists = build_transaction_matrix_from_orders(transactions_df)
+
+    frequent_itemsets = fpgrowth(
+        encoded_df,
+        min_support=min_support,
+        use_colnames=True,
+        max_len=max_len
+    )
+
+    if frequent_itemsets.empty:
+        return frequent_itemsets, pd.DataFrame(), len(transaction_lists), encoded_df.shape
+
+    rules = association_rules(
+        frequent_itemsets,
+        metric="confidence",
+        min_threshold=min_confidence
+    )
+
+    rules = format_mined_rules(rules)
+
+    return frequent_itemsets, rules, len(transaction_lists), encoded_df.shape
+
+
+def render_algorithm_controls(prefix, default_support=0.001, default_confidence=0.10, default_max_len=4):
+    """
+    Controls shared by Apriori and FP-Growth pages.
+    """
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        min_support = st.number_input(
+            "Minimum support",
+            min_value=0.0005,
+            max_value=0.1000,
+            value=default_support,
+            step=0.0005,
+            format="%.4f",
+            key=f"{prefix}_support"
+        )
+
+    with col2:
+        min_confidence = st.number_input(
+            "Minimum confidence",
+            min_value=0.05,
+            max_value=1.00,
+            value=default_confidence,
+            step=0.05,
+            format="%.2f",
+            key=f"{prefix}_confidence"
+        )
+
+    with col3:
+        max_len = st.slider(
+            "Maximum itemset length",
+            min_value=2,
+            max_value=5,
+            value=default_max_len,
+            key=f"{prefix}_max_len"
+        )
+
+    return min_support, min_confidence, max_len
+
+
+def render_association_algorithm_page(algorithm_name, frequent_itemsets, rules, n_transactions, matrix_shape):
+    """
+    Render a full page for either Apriori or FP-Growth.
+    """
+    col1, col2, col3, col4 = st.columns(4)
+
+    with col1:
+        metric_card("Transactions", f"{n_transactions:,}", "Orders analyzed")
+    with col2:
+        metric_card("Encoded Matrix", f"{matrix_shape[0]:,} x {matrix_shape[1]:,}", "Orders x Meals")
+    with col3:
+        metric_card("Frequent Itemsets", f"{len(frequent_itemsets):,}", algorithm_name)
+    with col4:
+        metric_card("Rules Generated", f"{len(rules):,}", "Association rules")
+
+    if rules.empty:
+        st.markdown(
+            """
+            <div class="warning-box">
+            No rules were generated with the selected parameters. Try lowering support or confidence.
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        return
+
+    st.markdown(
+        f"""
+        <div class="insight-box">
+        <b>{algorithm_name} Insight:</b> Rules are evaluated using support, confidence, lift, and reliability score.
+        Reliability score is calculated as Support × Confidence × Lift to avoid relying only on high-lift but rare patterns.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    tab1, tab2, tab3, tab4 = st.tabs([
+        "Top Rules",
+        "Reliable Rules",
+        "Quality Map",
+        "Frequent Itemsets"
+    ])
+
+    with tab1:
+        top_by_lift = rules.sort_values(["lift", "confidence"], ascending=False).head(15)
+
+        fig = px.bar(
+            top_by_lift.sort_values("lift"),
+            x="lift",
+            y="rule",
+            orientation="h",
+            color="lift",
+            color_continuous_scale="Turbo",
+            title=f"{algorithm_name}: Top Association Rules by Lift"
+        )
+        fig = make_plotly_layout(fig, 760)
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.dataframe(
+            top_by_lift[["rule", "support", "confidence", "lift", "reliability_score"]],
+            use_container_width=True
+        )
+
+    with tab2:
+        reliable = rules.sort_values("reliability_score", ascending=False).head(15)
+
+        fig = px.bar(
+            reliable.sort_values("reliability_score"),
+            x="reliability_score",
+            y="rule",
+            orientation="h",
+            color="confidence",
+            color_continuous_scale="Oranges",
+            title=f"{algorithm_name}: Most Reliable Rules"
+        )
+        fig = make_plotly_layout(fig, 760)
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.dataframe(
+            reliable[["rule", "support", "confidence", "lift", "reliability_score"]],
+            use_container_width=True
+        )
+
+    with tab3:
+        fig = px.scatter(
+            rules,
+            x="support",
+            y="confidence",
+            size="lift",
+            color="reliability_score",
+            hover_data=["rule", "lift"],
+            color_continuous_scale="Viridis",
+            title=f"{algorithm_name}: Support vs Confidence"
+        )
+        fig = make_plotly_layout(fig, 650)
+        st.plotly_chart(fig, use_container_width=True)
+
+    with tab4:
+        itemsets = frequent_itemsets.copy()
+        itemsets["itemsets"] = itemsets["itemsets"].apply(lambda x: ", ".join(sorted(list(x))))
+        itemsets["length"] = itemsets["itemsets"].apply(lambda x: len([i for i in x.split(",") if i.strip()]))
+
+        st.dataframe(
+            itemsets.sort_values("support", ascending=False).head(100),
+            use_container_width=True
+        )
+
+
 @st.cache_data(show_spinner=False)
 def build_pagerank_from_transactions(transactions_df):
     """
@@ -887,6 +1157,8 @@ page = st.sidebar.radio(
     [
         "Executive Overview",
         "EDA Dashboard",
+        "Apriori Analysis",
+        "FP-Growth Analysis",
         "Association Rules",
         "PageRank Network",
         "Sentiment Intelligence",
@@ -1112,14 +1384,85 @@ elif page == "EDA Dashboard":
     show_notebook_figure("Top Ordered Meals from Notebook", "02_top15_ordered_meals.png")
 
 
+
+# ============================================================
+# Page: Apriori Analysis
+# ============================================================
+
+elif page == "Apriori Analysis":
+    hero(
+        "Apriori Association Rule Mining",
+        "This page runs Apriori separately on the transaction dataset to discover frequent meal combinations and generate association rules."
+    )
+
+    st.markdown("### Apriori Parameters")
+    min_support, min_confidence, max_len = render_algorithm_controls(
+        "apriori",
+        default_support=0.001,
+        default_confidence=0.10,
+        default_max_len=4
+    )
+
+    with st.spinner("Running Apriori on transaction data..."):
+        apriori_itemsets, apriori_rules, n_transactions, matrix_shape = run_apriori_from_transactions(
+            transactions_df,
+            min_support=min_support,
+            min_confidence=min_confidence,
+            max_len=max_len
+        )
+
+    render_association_algorithm_page(
+        "Apriori",
+        apriori_itemsets,
+        apriori_rules,
+        n_transactions,
+        matrix_shape
+    )
+
+
+# ============================================================
+# Page: FP-Growth Analysis
+# ============================================================
+
+elif page == "FP-Growth Analysis":
+    hero(
+        "FP-Growth Association Rule Mining",
+        "This page runs FP-Growth separately on the transaction dataset. FP-Growth discovers frequent itemsets efficiently and generates association rules."
+    )
+
+    st.markdown("### FP-Growth Parameters")
+    min_support, min_confidence, max_len = render_algorithm_controls(
+        "fpgrowth",
+        default_support=0.001,
+        default_confidence=0.10,
+        default_max_len=4
+    )
+
+    with st.spinner("Running FP-Growth on transaction data..."):
+        fp_itemsets, fp_rules, n_transactions, matrix_shape = run_fpgrowth_from_transactions(
+            transactions_df,
+            min_support=min_support,
+            min_confidence=min_confidence,
+            max_len=max_len
+        )
+
+    render_association_algorithm_page(
+        "FP-Growth",
+        fp_itemsets,
+        fp_rules,
+        n_transactions,
+        matrix_shape
+    )
+
+
 # ============================================================
 # Page: Association Rules
 # ============================================================
 
 elif page == "Association Rules":
     hero(
-        "Association Rule Mining",
-        "Discover meal combinations that appear together more often than expected using support, confidence, lift, and a reliability score."
+        "Saved Association Rules Overview",
+        "This page displays the saved association_rules.csv output. Use the Apriori and FP-Growth pages to view each algorithm separately."
     )
 
     if rules_df.empty:
