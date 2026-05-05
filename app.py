@@ -822,11 +822,11 @@ def render_recommendation_cards(df, title_col, score_col=None, meta_cols=None, l
             try:
                 score = float(row[score_col])
                 width = max(0, min(score, 1)) * 100
-                score_html = f"""
-                <div class="score-line">
-                    <div class="score-fill" style="width:{width:.1f}%"></div>
-                </div>
-                """
+                score_html = (
+                    f'<div class="score-line">'
+                    f'<div class="score-fill" style="width:{width:.1f}%"></div>'
+                    f'</div>'
+                )
             except Exception:
                 score_html = ""
 
@@ -840,16 +840,15 @@ def render_recommendation_cards(df, title_col, score_col=None, meta_cols=None, l
 
         meta_text = " | ".join(meta_parts)
 
-        st.markdown(
-            f"""
-            <div class="rec-card">
-                <div class="rec-title">{title}</div>
-                <div class="rec-meta">{meta_text}</div>
-                {score_html}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        card_html = f"""
+        <div class="rec-card">
+            <div class="rec-title">{title}</div>
+            <div class="rec-meta">{meta_text}</div>
+            {score_html}
+        </div>
+        """
+
+        st.markdown(card_html, unsafe_allow_html=True)
 
 
 def sentiment_class(label):
