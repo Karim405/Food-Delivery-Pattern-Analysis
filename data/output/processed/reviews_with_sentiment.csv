@@ -1,6 +1,6 @@
 review_id,meal_id,review_text,sentiment,sentiment_score
 R000001,M0001,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R000002,M0001,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000002,M0001,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000003,M0001,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000004,M0001,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000005,M0001,Loved every bite. The packaging was also excellent.,POSITIVE,1
@@ -11,13 +11,13 @@ R000009,M0002,Amazing food! Delivered hot and fresh. Will definitely order again
 R000010,M0002,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000011,M0003,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000012,M0003,Best Classic Beef Burger I've ever had. The flavor was incredible!,POSITIVE,1
-R000013,M0003,The Classic Beef Burger was okay. Expected a bit more flavor.,NEUTRAL,0
-R000014,M0003,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000015,M0003,The Classic Beef Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000013,M0003,The Classic Beef Burger was okay. Expected a bit more flavor.,POSITIVE,1
+R000014,M0003,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000015,M0003,The Classic Beef Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000016,M0004,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000017,M0004,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000018,M0004,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000019,M0004,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000019,M0004,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000020,M0004,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000021,M0005,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000022,M0005,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -31,9 +31,9 @@ R000029,M0006,The Double Smash Burger was cold on arrival. Very frustrating.,NEG
 R000030,M0006,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000031,M0007,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000032,M0007,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000033,M0007,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000034,M0007,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R000035,M0007,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000033,M0007,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000034,M0007,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R000035,M0007,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000036,M0008,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000037,M0008,The Crispy Chicken Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000038,M0008,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -45,12 +45,12 @@ R000043,M0009,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R000044,M0009,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000045,M0009,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000046,M0010,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000047,M0010,The Crispy Chicken Burger was okay. Expected a bit more flavor.,NEUTRAL,0
-R000048,M0010,The Crispy Chicken Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000047,M0010,The Crispy Chicken Burger was okay. Expected a bit more flavor.,POSITIVE,1
+R000048,M0010,The Crispy Chicken Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000049,M0010,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000050,M0010,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000050,M0010,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000051,M0011,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000052,M0011,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000052,M0011,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000053,M0011,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000054,M0011,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000055,M0011,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
@@ -61,18 +61,18 @@ R000059,M0012,Amazing food! Delivered hot and fresh. Will definitely order again
 R000060,M0012,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000061,M0013,The Crispy Chicken Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000062,M0013,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000063,M0013,The Crispy Chicken Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000063,M0013,The Crispy Chicken Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000064,M0013,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000065,M0013,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000066,M0014,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000067,M0014,Best Crispy Chicken Burger I've ever had. The flavor was incredible!,POSITIVE,1
-R000068,M0014,The Crispy Chicken Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000068,M0014,The Crispy Chicken Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000069,M0014,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000070,M0014,The Crispy Chicken Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000071,M0015,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000071,M0015,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000072,M0015,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000073,M0015,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000074,M0015,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000074,M0015,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000075,M0015,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000076,M0016,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000077,M0016,The Bbq Bacon Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
@@ -80,8 +80,8 @@ R000078,M0016,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R000079,M0016,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000080,M0016,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000081,M0017,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000082,M0017,The Bbq Bacon Burger was okay. Expected a bit more flavor.,NEUTRAL,0
-R000083,M0017,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000082,M0017,The Bbq Bacon Burger was okay. Expected a bit more flavor.,POSITIVE,1
+R000083,M0017,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000084,M0017,Best Bbq Bacon Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000085,M0017,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000086,M0018,Portion was too small for the price. Won't order again.,NEGATIVE,-1
@@ -89,19 +89,19 @@ R000087,M0018,Super fast delivery and the food was outstanding. 5 stars!,POSITIV
 R000088,M0018,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000089,M0018,Best Bbq Bacon Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000090,M0018,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000091,M0019,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000091,M0019,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000092,M0019,The Bbq Bacon Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000093,M0019,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000093,M0019,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000094,M0019,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000095,M0019,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000096,M0020,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000097,M0020,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000097,M0020,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000098,M0020,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000099,M0020,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000100,M0020,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000101,M0021,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000102,M0021,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000103,M0021,The Bbq Bacon Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000103,M0021,The Bbq Bacon Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000104,M0021,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000105,M0021,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000106,M0022,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -116,29 +116,29 @@ R000114,M0023,Amazing food! Delivered hot and fresh. Will definitely order again
 R000115,M0023,Best Mushroom Swiss Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000116,M0024,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000117,M0024,The Mushroom Swiss Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000118,M0024,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000118,M0024,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000119,M0024,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000120,M0024,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000121,M0025,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000122,M0025,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000123,M0025,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000124,M0025,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000124,M0025,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000125,M0025,The Mushroom Swiss Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000126,M0026,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000127,M0026,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000128,M0026,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000129,M0026,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000130,M0026,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000131,M0027,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000131,M0027,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000132,M0027,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000133,M0027,The taste was bland and the delivery was late.,NEGATIVE,-1
-R000134,M0027,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000134,M0027,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000135,M0027,Best Spicy Jalapeño Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000136,M0028,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000137,M0028,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000138,M0028,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000139,M0028,The Spicy Jalapeño Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000140,M0028,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000140,M0028,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000141,M0029,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000142,M0029,The Veggie Garden Burger was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000143,M0029,The taste was bland and the delivery was late.,NEGATIVE,-1
@@ -153,7 +153,7 @@ R000151,M0031,Exceeded my expectations. This is exactly what comfort food should
 R000152,M0031,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000153,M0031,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000154,M0031,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000155,M0031,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000155,M0031,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000156,M0032,Best Truffle Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000157,M0032,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000158,M0032,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
@@ -161,45 +161,45 @@ R000159,M0032,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000160,M0032,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000161,M0033,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000162,M0033,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000163,M0033,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000163,M0033,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000164,M0033,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000165,M0033,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000166,M0034,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000167,M0034,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000168,M0034,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000168,M0034,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000169,M0034,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000170,M0034,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000170,M0034,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000171,M0035,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000172,M0035,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000173,M0035,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000174,M0035,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000175,M0035,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000175,M0035,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000176,M0036,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000177,M0036,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000178,M0036,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000179,M0036,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000179,M0036,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000180,M0036,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000181,M0037,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000182,M0037,Best Truffle Burger I've ever had. The flavor was incredible!,POSITIVE,1
 R000183,M0037,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000184,M0037,The Truffle Burger was okay. Expected a bit more flavor.,NEUTRAL,0
+R000184,M0037,The Truffle Burger was okay. Expected a bit more flavor.,POSITIVE,1
 R000185,M0037,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000186,M0038,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000187,M0038,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000187,M0038,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000188,M0038,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000189,M0038,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000190,M0038,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000191,M0039,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000192,M0039,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000193,M0039,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000194,M0039,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000194,M0039,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000195,M0039,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000196,M0040,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000197,M0040,Best Margherita Pizza I've ever had. The flavor was incredible!,POSITIVE,1
-R000198,M0040,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000198,M0040,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000199,M0040,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000200,M0040,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000201,M0041,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000200,M0040,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000201,M0041,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000202,M0041,The Margherita Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000203,M0041,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000204,M0041,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -209,20 +209,20 @@ R000207,M0042,Super fast delivery and the food was outstanding. 5 stars!,POSITIV
 R000208,M0042,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000209,M0042,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000210,M0042,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000211,M0043,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000211,M0043,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000212,M0043,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000213,M0043,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000214,M0043,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000213,M0043,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000214,M0043,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000215,M0043,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000216,M0044,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000217,M0044,The Pepperoni Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000217,M0044,The Pepperoni Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000218,M0044,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000219,M0044,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000220,M0044,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000221,M0045,The Pepperoni Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000222,M0045,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000223,M0045,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000224,M0045,The Pepperoni Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000224,M0045,The Pepperoni Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000225,M0045,Best Pepperoni Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000226,M0046,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000227,M0046,Loved every bite. The packaging was also excellent.,POSITIVE,1
@@ -235,7 +235,7 @@ R000233,M0047,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R000234,M0047,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000235,M0047,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000236,M0048,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000237,M0048,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000237,M0048,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000238,M0048,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000239,M0048,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000240,M0048,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -247,17 +247,17 @@ R000245,M0049,Exceeded my expectations. This is exactly what comfort food should
 R000246,M0050,The Pepperoni Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000247,M0050,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000248,M0050,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000249,M0050,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000249,M0050,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000250,M0050,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000251,M0051,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000252,M0051,The Pepperoni Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000253,M0051,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000254,M0051,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000255,M0051,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000256,M0052,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000256,M0052,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000257,M0052,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000258,M0052,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000259,M0052,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000259,M0052,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000260,M0052,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000261,M0053,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000262,M0053,Loved every bite. The packaging was also excellent.,POSITIVE,1
@@ -270,14 +270,14 @@ R000268,M0054,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R000269,M0054,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000270,M0054,The Bbq Chicken Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000271,M0055,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R000272,M0055,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000272,M0055,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000273,M0055,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000274,M0055,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000275,M0055,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000276,M0056,Best Bbq Chicken Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000277,M0056,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000278,M0056,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
-R000279,M0056,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000278,M0056,The Bbq Chicken Pizza was okay. Expected a bit more flavor.,POSITIVE,1
+R000279,M0056,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000280,M0056,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000281,M0057,Best Bbq Chicken Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000282,M0057,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -299,62 +299,62 @@ R000297,M0060,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R000298,M0060,The Four Cheese Pizza was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000299,M0060,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000300,M0060,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000301,M0061,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000301,M0061,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000302,M0061,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000303,M0061,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R000304,M0061,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000304,M0061,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000305,M0061,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000306,M0062,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000307,M0062,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000308,M0062,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000309,M0062,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000310,M0062,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000311,M0063,The Four Cheese Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
-R000312,M0063,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000311,M0063,The Four Cheese Pizza was okay. Expected a bit more flavor.,POSITIVE,1
+R000312,M0063,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000313,M0063,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000314,M0063,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000314,M0063,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000315,M0063,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000316,M0064,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000317,M0064,Best Meat Lovers Pizza I've ever had. The flavor was incredible!,POSITIVE,1
-R000318,M0064,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000318,M0064,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000319,M0064,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000320,M0064,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000321,M0065,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000322,M0065,The Meat Lovers Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000322,M0065,The Meat Lovers Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000323,M0065,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000324,M0065,The Meat Lovers Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000324,M0065,The Meat Lovers Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000325,M0065,The taste was bland and the delivery was late.,NEGATIVE,-1
-R000326,M0066,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000327,M0066,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000326,M0066,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000327,M0066,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000328,M0066,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000329,M0066,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000330,M0066,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000330,M0066,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000331,M0067,Best Meat Lovers Pizza I've ever had. The flavor was incredible!,POSITIVE,1
-R000332,M0067,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000332,M0067,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000333,M0067,Best Meat Lovers Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000334,M0067,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000335,M0067,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000336,M0068,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000337,M0068,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000338,M0068,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R000339,M0068,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000339,M0068,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000340,M0068,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000341,M0069,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000342,M0069,Best Meat Lovers Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000343,M0069,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000344,M0069,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000345,M0069,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000346,M0070,The Meat Lovers Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000345,M0069,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000346,M0070,The Meat Lovers Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000347,M0070,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000348,M0070,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000349,M0070,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000350,M0070,The Meat Lovers Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
+R000350,M0070,The Meat Lovers Pizza was okay. Expected a bit more flavor.,POSITIVE,1
 R000351,M0071,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000352,M0071,Best Meat Lovers Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000353,M0071,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000354,M0071,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000355,M0071,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000356,M0072,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000356,M0072,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000357,M0072,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000358,M0072,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000359,M0072,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -365,15 +365,15 @@ R000363,M0073,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R000364,M0073,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000365,M0073,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000366,M0074,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000367,M0074,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000367,M0074,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000368,M0074,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000369,M0074,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000370,M0074,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000371,M0075,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000372,M0075,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000372,M0075,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000373,M0075,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000374,M0075,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000375,M0075,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000374,M0075,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000375,M0075,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000376,M0076,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000377,M0076,Best Veggie Supreme Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000378,M0076,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
@@ -381,26 +381,26 @@ R000379,M0076,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R000380,M0076,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000381,M0077,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000382,M0077,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000383,M0077,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R000384,M0077,The Veggie Supreme Pizza was okay. Expected a bit more flavor.,NEUTRAL,0
-R000385,M0077,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000383,M0077,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R000384,M0077,The Veggie Supreme Pizza was okay. Expected a bit more flavor.,POSITIVE,1
+R000385,M0077,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000386,M0078,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000387,M0078,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000388,M0078,Best Hawaiian Pizza I've ever had. The flavor was incredible!,POSITIVE,1
-R000389,M0078,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000389,M0078,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000390,M0078,Best Hawaiian Pizza I've ever had. The flavor was incredible!,POSITIVE,1
 R000391,M0079,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000392,M0079,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000393,M0079,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000394,M0079,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000395,M0079,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000395,M0079,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000396,M0080,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000397,M0080,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000398,M0080,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000399,M0080,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000400,M0080,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000400,M0080,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000401,M0081,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000402,M0081,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000402,M0081,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000403,M0081,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000404,M0081,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000405,M0081,The taste was bland and the delivery was late.,NEGATIVE,-1
@@ -414,18 +414,18 @@ R000412,M0083,The Truffle Mushroom Pizza was cold on arrival. Very frustrating.,
 R000413,M0083,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000414,M0083,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000415,M0083,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000416,M0084,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000416,M0084,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000417,M0084,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000418,M0084,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000419,M0084,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000419,M0084,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000420,M0084,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000421,M0085,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R000422,M0085,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000421,M0085,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R000422,M0085,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000423,M0085,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000424,M0085,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000425,M0085,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000426,M0086,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000427,M0086,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000427,M0086,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000428,M0086,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000429,M0086,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000430,M0086,The taste was bland and the delivery was late.,NEGATIVE,-1
@@ -433,11 +433,11 @@ R000431,M0087,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000432,M0087,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000433,M0087,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000434,M0087,The Chicken Shawarma Wrap was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000435,M0087,The Chicken Shawarma Wrap was okay. Expected a bit more flavor.,NEUTRAL,0
+R000435,M0087,The Chicken Shawarma Wrap was okay. Expected a bit more flavor.,POSITIVE,1
 R000436,M0088,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000437,M0088,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000437,M0088,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000438,M0088,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000439,M0088,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000439,M0088,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000440,M0088,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000441,M0089,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000442,M0089,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
@@ -450,9 +450,9 @@ R000448,M0090,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000449,M0090,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000450,M0090,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000451,M0091,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000452,M0091,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000452,M0091,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000453,M0091,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000454,M0091,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000454,M0091,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000455,M0091,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000456,M0092,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000457,M0092,Portion was too small for the price. Won't order again.,NEGATIVE,-1
@@ -462,33 +462,33 @@ R000460,M0092,The quality is consistently great. My go-to order every week.,POSI
 R000461,M0093,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000462,M0093,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000463,M0093,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000464,M0093,The Meat Shawarma Wrap was okay. Expected a bit more flavor.,NEUTRAL,0
+R000464,M0093,The Meat Shawarma Wrap was okay. Expected a bit more flavor.,POSITIVE,1
 R000465,M0093,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000466,M0094,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000467,M0094,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000468,M0094,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000469,M0094,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000470,M0094,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000471,M0095,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000470,M0094,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000471,M0095,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000472,M0095,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000473,M0095,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000474,M0095,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000475,M0095,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000476,M0096,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000476,M0096,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000477,M0096,Best Falafel Wrap I've ever had. The flavor was incredible!,POSITIVE,1
 R000478,M0096,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000479,M0096,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000479,M0096,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000480,M0096,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000481,M0097,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000482,M0097,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000483,M0097,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000484,M0097,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000484,M0097,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000485,M0097,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000486,M0098,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000487,M0098,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000488,M0098,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000489,M0098,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000490,M0098,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000489,M0098,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000490,M0098,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000491,M0099,Best Shawarma Plate I've ever had. The flavor was incredible!,POSITIVE,1
 R000492,M0099,The Shawarma Plate was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000493,M0099,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -504,12 +504,12 @@ R000502,M0101,Exceeded my expectations. This is exactly what comfort food should
 R000503,M0101,Best Shawarma Plate I've ever had. The flavor was incredible!,POSITIVE,1
 R000504,M0101,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000505,M0101,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000506,M0102,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000506,M0102,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000507,M0102,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000508,M0102,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000509,M0102,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000509,M0102,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000510,M0102,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R000511,M0103,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000511,M0103,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000512,M0103,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000513,M0103,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000514,M0103,Best Shawarma Plate I've ever had. The flavor was incredible!,POSITIVE,1
@@ -518,57 +518,57 @@ R000516,M0104,Absolutely delicious. Generous portions and great value for money.
 R000517,M0104,Best Shawarma Plate I've ever had. The flavor was incredible!,POSITIVE,1
 R000518,M0104,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000519,M0104,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000520,M0104,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000520,M0104,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000521,M0105,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000522,M0105,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R000523,M0105,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000523,M0105,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000524,M0105,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000525,M0105,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000526,M0106,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000527,M0106,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000527,M0106,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000528,M0106,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000529,M0106,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000530,M0106,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000531,M0107,The Mixed Grill Wrap was okay. Expected a bit more flavor.,NEUTRAL,0
+R000531,M0107,The Mixed Grill Wrap was okay. Expected a bit more flavor.,POSITIVE,1
 R000532,M0107,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000533,M0107,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000534,M0107,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000535,M0107,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000536,M0108,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000537,M0108,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000538,M0108,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R000539,M0108,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000538,M0108,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R000539,M0108,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000540,M0108,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000541,M0109,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000542,M0109,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000543,M0109,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000543,M0109,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000544,M0109,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000545,M0109,Best Mixed Grill Wrap I've ever had. The flavor was incredible!,POSITIVE,1
-R000546,M0110,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000546,M0110,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000547,M0110,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000548,M0110,The Mixed Grill Wrap was okay. Expected a bit more flavor.,NEUTRAL,0
+R000548,M0110,The Mixed Grill Wrap was okay. Expected a bit more flavor.,POSITIVE,1
 R000549,M0110,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000550,M0110,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000551,M0111,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000551,M0111,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000552,M0111,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000553,M0111,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000554,M0111,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000555,M0111,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000555,M0111,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000556,M0112,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000557,M0112,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000558,M0112,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000559,M0112,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000558,M0112,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000559,M0112,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000560,M0112,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000561,M0113,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000562,M0113,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000563,M0113,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000564,M0113,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000564,M0113,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000565,M0113,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000566,M0114,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000567,M0114,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000568,M0114,Best Cheese Shawarma I've ever had. The flavor was incredible!,POSITIVE,1
-R000569,M0114,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000570,M0114,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000569,M0114,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000570,M0114,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000571,M0115,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000572,M0115,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000573,M0115,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -578,38 +578,38 @@ R000576,M0116,Super fast delivery and the food was outstanding. 5 stars!,POSITIV
 R000577,M0116,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000578,M0116,Best Cheese Shawarma I've ever had. The flavor was incredible!,POSITIVE,1
 R000579,M0116,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000580,M0116,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000580,M0116,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000581,M0117,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000582,M0117,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000582,M0117,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000583,M0117,Best Cheese Shawarma I've ever had. The flavor was incredible!,POSITIVE,1
 R000584,M0117,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000585,M0117,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000586,M0118,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000587,M0118,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000588,M0118,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000587,M0118,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000588,M0118,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000589,M0118,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000590,M0118,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000591,M0119,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000592,M0119,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000592,M0119,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000593,M0119,The Salmon Nigiri (2Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000594,M0119,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000595,M0119,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000596,M0120,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000595,M0119,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000596,M0120,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000597,M0120,The Salmon Nigiri (2Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000598,M0120,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000599,M0120,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000600,M0120,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000601,M0121,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000602,M0121,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000603,M0121,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000604,M0121,The Salmon Nigiri (2Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000603,M0121,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000604,M0121,The Salmon Nigiri (2Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000605,M0121,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000606,M0122,The Salmon Nigiri (2Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000606,M0122,The Salmon Nigiri (2Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000607,M0122,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000608,M0122,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000609,M0122,Best Salmon Nigiri (2Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000610,M0122,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000611,M0123,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000611,M0123,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000612,M0123,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000613,M0123,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000614,M0123,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
@@ -625,12 +625,12 @@ R000623,M0125,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R000624,M0125,Best California Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000625,M0125,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000626,M0126,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000627,M0126,The California Roll (8Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000627,M0126,The California Roll (8Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000628,M0126,Best California Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
-R000629,M0126,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000629,M0126,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000630,M0126,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000631,M0127,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000632,M0127,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000632,M0127,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000633,M0127,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000634,M0127,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000635,M0127,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -641,8 +641,8 @@ R000639,M0128,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000640,M0128,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000641,M0129,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000642,M0129,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000643,M0129,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000644,M0129,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000643,M0129,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000644,M0129,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000645,M0129,Best Dragon Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000646,M0130,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000647,M0130,The Dragon Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
@@ -654,18 +654,18 @@ R000652,M0131,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000653,M0131,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000654,M0131,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000655,M0131,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000656,M0132,The Dragon Roll (8Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000656,M0132,The Dragon Roll (8Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000657,M0132,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000658,M0132,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000659,M0132,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R000660,M0132,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000658,M0132,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000659,M0132,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R000660,M0132,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000661,M0133,Best Dragon Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000662,M0133,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000663,M0133,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000664,M0133,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000665,M0133,Best Dragon Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000666,M0134,Best Dragon Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
-R000667,M0134,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000667,M0134,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000668,M0134,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000669,M0134,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000670,M0134,Packaging was damaged and food quality was below average.,NEGATIVE,-1
@@ -678,40 +678,40 @@ R000676,M0136,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000677,M0136,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000678,M0136,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000679,M0136,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000680,M0136,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000680,M0136,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000681,M0137,The Spicy Tuna Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000682,M0137,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000683,M0137,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R000684,M0137,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000684,M0137,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000685,M0137,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000686,M0138,Best Spicy Tuna Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000687,M0138,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000688,M0138,The taste was bland and the delivery was late.,NEGATIVE,-1
-R000689,M0138,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000689,M0138,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000690,M0138,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000691,M0139,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000692,M0139,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000692,M0139,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000693,M0139,Best Spicy Tuna Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
 R000694,M0139,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000695,M0139,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000696,M0140,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000696,M0140,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000697,M0140,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000698,M0140,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000699,M0140,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000699,M0140,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000700,M0140,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000701,M0141,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000702,M0141,The Rainbow Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000703,M0141,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000704,M0141,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000704,M0141,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000705,M0141,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000706,M0142,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000707,M0142,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000708,M0142,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000708,M0142,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000709,M0142,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000710,M0142,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000711,M0143,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000712,M0143,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000713,M0143,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000713,M0143,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000714,M0143,The Rainbow Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000715,M0143,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000716,M0144,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -719,14 +719,14 @@ R000717,M0144,Perfect seasoning and amazing presentation. Worth every penny.,POS
 R000718,M0144,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000719,M0144,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000720,M0144,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000721,M0145,The Rainbow Roll (8Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000721,M0145,The Rainbow Roll (8Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000722,M0145,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000723,M0145,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000724,M0145,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000725,M0145,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000726,M0146,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000727,M0146,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000728,M0146,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000728,M0146,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000729,M0146,The Rainbow Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000730,M0146,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000731,M0147,Portion was too small for the price. Won't order again.,NEGATIVE,-1
@@ -735,8 +735,8 @@ R000733,M0147,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000734,M0147,The Rainbow Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000735,M0147,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000736,M0148,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000737,M0148,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R000738,M0148,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000737,M0148,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R000738,M0148,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000739,M0148,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000740,M0148,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000741,M0149,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -744,21 +744,21 @@ R000742,M0149,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000743,M0149,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000744,M0149,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000745,M0149,The Veggie Roll (8Pcs) was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000746,M0150,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R000747,M0150,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000746,M0150,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R000747,M0150,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000748,M0150,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000749,M0150,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000750,M0150,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000750,M0150,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000751,M0151,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000752,M0151,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000752,M0151,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000753,M0151,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000754,M0151,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000755,M0151,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000756,M0152,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000757,M0152,Best Veggie Roll (8Pcs) I've ever had. The flavor was incredible!,POSITIVE,1
-R000758,M0152,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000758,M0152,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000759,M0152,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000760,M0152,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000760,M0152,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000761,M0153,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000762,M0153,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000763,M0153,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -780,7 +780,7 @@ R000778,M0156,Exceeded my expectations. This is exactly what comfort food should
 R000779,M0156,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000780,M0156,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000781,M0157,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000782,M0157,The Sashimi Platter (12Pcs) was okay. Expected a bit more flavor.,NEUTRAL,0
+R000782,M0157,The Sashimi Platter (12Pcs) was okay. Expected a bit more flavor.,POSITIVE,1
 R000783,M0157,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000784,M0157,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000785,M0157,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
@@ -791,41 +791,41 @@ R000789,M0158,Missing items from my order. Customer service was unhelpful.,NEGAT
 R000790,M0158,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000791,M0159,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000792,M0159,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000793,M0159,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000794,M0159,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R000795,M0159,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000793,M0159,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000794,M0159,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R000795,M0159,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000796,M0160,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000797,M0160,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000797,M0160,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000798,M0160,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000799,M0160,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000800,M0160,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000801,M0161,Best Spaghetti Bolognese I've ever had. The flavor was incredible!,POSITIVE,1
 R000802,M0161,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000803,M0161,The Spaghetti Bolognese was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000804,M0161,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000804,M0161,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000805,M0161,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000806,M0162,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000807,M0162,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000808,M0162,The Spaghetti Bolognese was okay. Expected a bit more flavor.,NEUTRAL,0
+R000808,M0162,The Spaghetti Bolognese was okay. Expected a bit more flavor.,POSITIVE,1
 R000809,M0162,The Spaghetti Bolognese was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000810,M0162,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000811,M0163,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000811,M0163,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000812,M0163,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000813,M0163,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000813,M0163,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000814,M0163,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000815,M0163,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000816,M0164,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000817,M0164,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000818,M0164,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000817,M0164,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000818,M0164,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000819,M0164,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000820,M0164,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000821,M0165,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000822,M0165,Best Spaghetti Bolognese I've ever had. The flavor was incredible!,POSITIVE,1
-R000823,M0165,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000824,M0165,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000823,M0165,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000824,M0165,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000825,M0165,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000826,M0166,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000827,M0166,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000827,M0166,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000828,M0166,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000829,M0166,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000830,M0166,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
@@ -833,7 +833,7 @@ R000831,M0167,Super fast delivery and the food was outstanding. 5 stars!,POSITIV
 R000832,M0167,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000833,M0167,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000834,M0167,Best Spaghetti Bolognese I've ever had. The flavor was incredible!,POSITIVE,1
-R000835,M0167,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000835,M0167,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000836,M0168,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000837,M0168,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000838,M0168,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
@@ -841,7 +841,7 @@ R000839,M0168,Absolutely delicious. Generous portions and great value for money.
 R000840,M0168,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000841,M0169,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R000842,M0169,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000843,M0169,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000843,M0169,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000844,M0169,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R000845,M0169,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000846,M0170,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -854,18 +854,18 @@ R000852,M0171,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R000853,M0171,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000854,M0171,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000855,M0171,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000856,M0172,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000856,M0172,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000857,M0172,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000858,M0172,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R000859,M0172,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000859,M0172,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000860,M0172,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000861,M0173,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000862,M0173,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R000863,M0173,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000863,M0173,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000864,M0173,Best Fettuccine Alfredo I've ever had. The flavor was incredible!,POSITIVE,1
-R000865,M0173,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000865,M0173,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000866,M0174,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R000867,M0174,The Fettuccine Alfredo was okay. Expected a bit more flavor.,NEUTRAL,0
+R000867,M0174,The Fettuccine Alfredo was okay. Expected a bit more flavor.,POSITIVE,1
 R000868,M0174,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R000869,M0174,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000870,M0174,Best Fettuccine Alfredo I've ever had. The flavor was incredible!,POSITIVE,1
@@ -874,9 +874,9 @@ R000872,M0175,The Fettuccine Alfredo was cold on arrival. Very frustrating.,NEGA
 R000873,M0175,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000874,M0175,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000875,M0175,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000876,M0176,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R000877,M0176,The Fettuccine Alfredo was okay. Expected a bit more flavor.,NEUTRAL,0
-R000878,M0176,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R000876,M0176,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R000877,M0176,The Fettuccine Alfredo was okay. Expected a bit more flavor.,POSITIVE,1
+R000878,M0176,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R000879,M0176,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000880,M0176,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000881,M0177,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
@@ -884,26 +884,26 @@ R000882,M0177,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000883,M0177,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000884,M0177,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000885,M0177,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000886,M0178,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000886,M0178,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000887,M0178,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000888,M0178,The taste was bland and the delivery was late.,NEGATIVE,-1
-R000889,M0178,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000889,M0178,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000890,M0178,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000891,M0179,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000892,M0179,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000892,M0179,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000893,M0179,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R000894,M0179,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000895,M0179,The Pasta Carbonara was okay. Expected a bit more flavor.,NEUTRAL,0
+R000894,M0179,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000895,M0179,The Pasta Carbonara was okay. Expected a bit more flavor.,POSITIVE,1
 R000896,M0180,The Pasta Carbonara was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000897,M0180,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R000898,M0180,The Pasta Carbonara was okay. Expected a bit more flavor.,NEUTRAL,0
+R000897,M0180,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R000898,M0180,The Pasta Carbonara was okay. Expected a bit more flavor.,POSITIVE,1
 R000899,M0180,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000900,M0180,The Pasta Carbonara was okay. Expected a bit more flavor.,NEUTRAL,0
+R000900,M0180,The Pasta Carbonara was okay. Expected a bit more flavor.,POSITIVE,1
 R000901,M0181,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000902,M0181,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000903,M0181,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R000904,M0181,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R000905,M0181,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000905,M0181,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000906,M0182,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000907,M0182,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000908,M0182,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -920,7 +920,7 @@ R000918,M0184,The quality is consistently great. My go-to order every week.,POSI
 R000919,M0184,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000920,M0184,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000921,M0185,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R000922,M0185,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000922,M0185,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000923,M0185,The Pesto Pasta was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000924,M0185,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000925,M0185,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -934,31 +934,31 @@ R000932,M0187,Exceeded my expectations. This is exactly what comfort food should
 R000933,M0187,Best Pesto Pasta I've ever had. The flavor was incredible!,POSITIVE,1
 R000934,M0187,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000935,M0187,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R000936,M0188,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000936,M0188,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000937,M0188,The Seafood Linguine was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000938,M0188,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000939,M0188,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000940,M0188,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000941,M0189,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000942,M0189,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R000943,M0189,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000943,M0189,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000944,M0189,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000945,M0189,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R000945,M0189,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R000946,M0190,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R000947,M0190,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R000948,M0190,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000948,M0190,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000949,M0190,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R000950,M0190,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000951,M0191,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R000952,M0191,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000951,M0191,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R000952,M0191,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000953,M0191,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R000954,M0191,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000955,M0191,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R000956,M0192,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R000957,M0192,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R000957,M0192,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R000958,M0192,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R000959,M0192,The Lasagna was cold on arrival. Very frustrating.,NEGATIVE,-1
-R000960,M0192,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000960,M0192,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000961,M0193,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000962,M0193,The Lasagna was cold on arrival. Very frustrating.,NEGATIVE,-1
 R000963,M0193,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
@@ -978,9 +978,9 @@ R000976,M0196,Exceeded my expectations. This is exactly what comfort food should
 R000977,M0196,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000978,M0196,Best Caesar Salad I've ever had. The flavor was incredible!,POSITIVE,1
 R000979,M0196,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R000980,M0196,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000980,M0196,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000981,M0197,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R000982,M0197,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R000982,M0197,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R000983,M0197,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R000984,M0197,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R000985,M0197,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
@@ -994,17 +994,17 @@ R000992,M0199,The quality is consistently great. My go-to order every week.,POSI
 R000993,M0199,The taste was bland and the delivery was late.,NEGATIVE,-1
 R000994,M0199,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R000995,M0199,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R000996,M0200,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R000997,M0200,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R000996,M0200,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R000997,M0200,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R000998,M0200,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R000999,M0200,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001000,M0200,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001001,M0201,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001001,M0201,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001002,M0201,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001003,M0201,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001004,M0201,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001004,M0201,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001005,M0201,Best Caesar Salad I've ever had. The flavor was incredible!,POSITIVE,1
-R001006,M0202,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001006,M0202,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001007,M0202,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001008,M0202,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001009,M0202,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1014,29 +1014,29 @@ R001012,M0203,Perfect seasoning and amazing presentation. Worth every penny.,POS
 R001013,M0203,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001014,M0203,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001015,M0203,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001016,M0204,The Greek Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001016,M0204,The Greek Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001017,M0204,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001018,M0204,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001019,M0204,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001020,M0204,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001021,M0205,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001022,M0205,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001022,M0205,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001023,M0205,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001024,M0205,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001025,M0205,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001026,M0206,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001027,M0206,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001028,M0206,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001028,M0206,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001029,M0206,Best Greek Salad I've ever had. The flavor was incredible!,POSITIVE,1
 R001030,M0206,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001031,M0207,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001032,M0207,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001032,M0207,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001033,M0207,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001034,M0207,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001035,M0207,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001035,M0207,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001036,M0208,The Fattoush Salad was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001037,M0208,The Fattoush Salad was okay. Expected a bit more flavor.,NEUTRAL,0
-R001038,M0208,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001037,M0208,The Fattoush Salad was okay. Expected a bit more flavor.,POSITIVE,1
+R001038,M0208,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001039,M0208,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001040,M0208,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001041,M0209,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
@@ -1044,35 +1044,35 @@ R001042,M0209,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001043,M0209,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001044,M0209,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001045,M0209,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001046,M0210,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001047,M0210,The Fattoush Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001046,M0210,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001047,M0210,The Fattoush Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001048,M0210,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001049,M0210,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001049,M0210,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001050,M0210,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001051,M0211,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001052,M0211,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001053,M0211,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001054,M0211,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001055,M0211,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001056,M0212,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001056,M0212,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001057,M0212,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001058,M0212,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001059,M0212,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001060,M0212,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001061,M0213,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001060,M0212,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001061,M0213,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001062,M0213,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001063,M0213,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001064,M0213,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001065,M0213,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001066,M0214,The Quinoa Power Bowl was okay. Expected a bit more flavor.,NEUTRAL,0
-R001067,M0214,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001065,M0213,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001066,M0214,The Quinoa Power Bowl was okay. Expected a bit more flavor.,POSITIVE,1
+R001067,M0214,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001068,M0214,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001069,M0214,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001070,M0214,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001071,M0215,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001072,M0215,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001073,M0215,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001074,M0215,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001073,M0215,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001074,M0215,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001075,M0215,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001076,M0216,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001077,M0216,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1081,7 +1081,7 @@ R001079,M0216,Exceeded my expectations. This is exactly what comfort food should
 R001080,M0216,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001081,M0217,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001082,M0217,Best Grilled Chicken Salad I've ever had. The flavor was incredible!,POSITIVE,1
-R001083,M0217,The Grilled Chicken Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001083,M0217,The Grilled Chicken Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001084,M0217,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001085,M0217,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001086,M0218,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
@@ -1095,7 +1095,7 @@ R001093,M0219,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001094,M0219,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001095,M0219,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001096,M0220,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001097,M0220,The Grilled Chicken Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001097,M0220,The Grilled Chicken Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001098,M0220,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001099,M0220,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001100,M0220,The taste was bland and the delivery was late.,NEGATIVE,-1
@@ -1105,7 +1105,7 @@ R001103,M0221,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R001104,M0221,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001105,M0221,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001106,M0222,Best Grilled Chicken Salad I've ever had. The flavor was incredible!,POSITIVE,1
-R001107,M0222,The Grilled Chicken Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001107,M0222,The Grilled Chicken Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001108,M0222,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001109,M0222,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001110,M0222,Portion was too small for the price. Won't order again.,NEGATIVE,-1
@@ -1121,35 +1121,35 @@ R001119,M0224,Amazing food! Delivered hot and fresh. Will definitely order again
 R001120,M0224,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001121,M0225,Best Caprese Salad I've ever had. The flavor was incredible!,POSITIVE,1
 R001122,M0225,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001123,M0225,The Caprese Salad was okay. Expected a bit more flavor.,NEUTRAL,0
+R001123,M0225,The Caprese Salad was okay. Expected a bit more flavor.,POSITIVE,1
 R001124,M0225,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001125,M0225,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001126,M0226,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001127,M0226,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001128,M0226,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001128,M0226,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001129,M0226,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001130,M0226,The Caprese Salad was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001131,M0227,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001131,M0227,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001132,M0227,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001133,M0227,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001133,M0227,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001134,M0227,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001135,M0227,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001136,M0228,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001137,M0228,Best Chocolate Lava Cake I've ever had. The flavor was incredible!,POSITIVE,1
-R001138,M0228,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001138,M0228,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001139,M0228,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001140,M0228,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R001141,M0229,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001142,M0229,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001140,M0228,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R001141,M0229,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001142,M0229,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001143,M0229,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001144,M0229,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001145,M0229,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001146,M0230,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001145,M0229,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001146,M0230,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001147,M0230,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001148,M0230,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001149,M0230,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001150,M0230,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001151,M0231,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001151,M0231,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001152,M0231,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001153,M0231,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001154,M0231,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
@@ -1164,22 +1164,22 @@ R001162,M0233,Missing items from my order. Customer service was unhelpful.,NEGAT
 R001163,M0233,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001164,M0233,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001165,M0233,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001166,M0234,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001167,M0234,The Cheesecake Slice was okay. Expected a bit more flavor.,NEUTRAL,0
+R001166,M0234,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001167,M0234,The Cheesecake Slice was okay. Expected a bit more flavor.,POSITIVE,1
 R001168,M0234,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001169,M0234,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001169,M0234,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001170,M0234,The Cheesecake Slice was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001171,M0235,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001171,M0235,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001172,M0235,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001173,M0235,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001174,M0235,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001175,M0235,The Cheesecake Slice was okay. Expected a bit more flavor.,NEUTRAL,0
+R001174,M0235,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001175,M0235,The Cheesecake Slice was okay. Expected a bit more flavor.,POSITIVE,1
 R001176,M0236,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001177,M0236,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001178,M0236,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001179,M0236,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001180,M0236,The Cheesecake Slice was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001181,M0237,The Cheesecake Slice was okay. Expected a bit more flavor.,NEUTRAL,0
+R001181,M0237,The Cheesecake Slice was okay. Expected a bit more flavor.,POSITIVE,1
 R001182,M0237,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001183,M0237,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001184,M0237,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1192,9 +1192,9 @@ R001190,M0238,The quality is consistently great. My go-to order every week.,POSI
 R001191,M0239,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001192,M0239,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001193,M0239,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001194,M0239,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001194,M0239,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001195,M0239,The Crème Brûlée was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001196,M0240,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001196,M0240,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001197,M0240,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001198,M0240,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001199,M0240,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
@@ -1202,15 +1202,15 @@ R001200,M0240,Perfect seasoning and amazing presentation. Worth every penny.,POS
 R001201,M0241,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001202,M0241,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001203,M0241,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001204,M0241,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001204,M0241,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001205,M0241,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001206,M0242,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001207,M0242,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001207,M0242,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001208,M0242,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001209,M0242,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001210,M0242,Best Tiramisu I've ever had. The flavor was incredible!,POSITIVE,1
 R001211,M0243,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001212,M0243,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001212,M0243,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001213,M0243,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001214,M0243,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001215,M0243,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1223,39 +1223,39 @@ R001221,M0245,Super fast delivery and the food was outstanding. 5 stars!,POSITIV
 R001222,M0245,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001223,M0245,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001224,M0245,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001225,M0245,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001225,M0245,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001226,M0246,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R001227,M0246,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001227,M0246,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001228,M0246,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001229,M0246,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001230,M0246,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001231,M0247,Best Kunafa I've ever had. The flavor was incredible!,POSITIVE,1
 R001232,M0247,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001233,M0247,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R001234,M0247,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001234,M0247,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001235,M0247,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001236,M0248,The Kunafa was okay. Expected a bit more flavor.,NEUTRAL,0
-R001237,M0248,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001236,M0248,The Kunafa was okay. Expected a bit more flavor.,POSITIVE,1
+R001237,M0248,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001238,M0248,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001239,M0248,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001240,M0248,The Kunafa was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001241,M0249,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001242,M0249,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001243,M0249,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001243,M0249,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001244,M0249,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001245,M0249,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001246,M0250,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001247,M0250,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001248,M0250,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001249,M0250,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001250,M0250,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001250,M0250,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001251,M0251,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001252,M0251,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001253,M0251,The Umm Ali was okay. Expected a bit more flavor.,NEUTRAL,0
+R001253,M0251,The Umm Ali was okay. Expected a bit more flavor.,POSITIVE,1
 R001254,M0251,Best Umm Ali I've ever had. The flavor was incredible!,POSITIVE,1
 R001255,M0251,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001256,M0252,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001257,M0252,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001257,M0252,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001258,M0252,Best Umm Ali I've ever had. The flavor was incredible!,POSITIVE,1
 R001259,M0252,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001260,M0252,Packaging was damaged and food quality was below average.,NEGATIVE,-1
@@ -1265,7 +1265,7 @@ R001263,M0253,Absolutely delicious. Generous portions and great value for money.
 R001264,M0253,Best Umm Ali I've ever had. The flavor was incredible!,POSITIVE,1
 R001265,M0253,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001266,M0254,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001267,M0254,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001267,M0254,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001268,M0254,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001269,M0254,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001270,M0254,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
@@ -1274,12 +1274,12 @@ R001272,M0255,Amazing food! Delivered hot and fresh. Will definitely order again
 R001273,M0255,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001274,M0255,The Umm Ali was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001275,M0255,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001276,M0256,The Umm Ali was okay. Expected a bit more flavor.,NEUTRAL,0
+R001276,M0256,The Umm Ali was okay. Expected a bit more flavor.,POSITIVE,1
 R001277,M0256,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001278,M0256,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001279,M0256,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001279,M0256,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001280,M0256,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001281,M0257,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001281,M0257,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001282,M0257,Best Waffles & Ice Cream I've ever had. The flavor was incredible!,POSITIVE,1
 R001283,M0257,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001284,M0257,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1288,10 +1288,10 @@ R001286,M0258,Missing items from my order. Customer service was unhelpful.,NEGAT
 R001287,M0258,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001288,M0258,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001289,M0258,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001290,M0258,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001290,M0258,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001291,M0259,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001292,M0259,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001293,M0259,The Waffles & Ice Cream was okay. Expected a bit more flavor.,NEUTRAL,0
+R001293,M0259,The Waffles & Ice Cream was okay. Expected a bit more flavor.,POSITIVE,1
 R001294,M0259,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001295,M0259,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001296,M0260,The taste was bland and the delivery was late.,NEGATIVE,-1
@@ -1304,7 +1304,7 @@ R001302,M0261,Absolutely delicious. Generous portions and great value for money.
 R001303,M0261,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001304,M0261,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001305,M0261,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001306,M0262,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001306,M0262,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001307,M0262,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001308,M0262,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001309,M0262,Best Waffles & Ice Cream I've ever had. The flavor was incredible!,POSITIVE,1
@@ -1314,18 +1314,18 @@ R001312,M0263,The Waffles & Ice Cream was cold on arrival. Very frustrating.,NEG
 R001313,M0263,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001314,M0263,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001315,M0263,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001316,M0264,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001316,M0264,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001317,M0264,The Waffles & Ice Cream was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001318,M0264,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001319,M0264,The Waffles & Ice Cream was okay. Expected a bit more flavor.,NEUTRAL,0
-R001320,M0264,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001319,M0264,The Waffles & Ice Cream was okay. Expected a bit more flavor.,POSITIVE,1
+R001320,M0264,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001321,M0265,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001322,M0265,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001323,M0265,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001324,M0265,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001324,M0265,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001325,M0265,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001326,M0266,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R001327,M0266,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001326,M0266,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R001327,M0266,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001328,M0266,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001329,M0266,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001330,M0266,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1339,9 +1339,9 @@ R001337,M0268,Perfect seasoning and amazing presentation. Worth every penny.,POS
 R001338,M0268,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001339,M0268,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001340,M0268,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001341,M0269,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001341,M0269,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001342,M0269,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001343,M0269,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001343,M0269,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001344,M0269,Best Fresh Orange Juice I've ever had. The flavor was incredible!,POSITIVE,1
 R001345,M0269,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001346,M0270,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1351,19 +1351,19 @@ R001349,M0270,Exceeded my expectations. This is exactly what comfort food should
 R001350,M0270,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001351,M0271,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001352,M0271,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001353,M0271,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001354,M0271,The Fresh Orange Juice was okay. Expected a bit more flavor.,NEUTRAL,0
+R001353,M0271,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001354,M0271,The Fresh Orange Juice was okay. Expected a bit more flavor.,POSITIVE,1
 R001355,M0271,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001356,M0272,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001357,M0272,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001358,M0272,The Mango Smoothie was okay. Expected a bit more flavor.,NEUTRAL,0
+R001358,M0272,The Mango Smoothie was okay. Expected a bit more flavor.,POSITIVE,1
 R001359,M0272,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001360,M0272,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R001361,M0273,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001361,M0273,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001362,M0273,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001363,M0273,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001364,M0273,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001365,M0273,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001365,M0273,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001366,M0274,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001367,M0274,The Mango Smoothie was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001368,M0274,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1382,34 +1382,34 @@ R001380,M0276,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001381,M0277,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001382,M0277,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001383,M0277,Best Iced Latte I've ever had. The flavor was incredible!,POSITIVE,1
-R001384,M0277,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001384,M0277,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001385,M0277,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001386,M0278,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001387,M0278,The taste was bland and the delivery was late.,NEGATIVE,-1
-R001388,M0278,The Iced Latte was okay. Expected a bit more flavor.,NEUTRAL,0
+R001388,M0278,The Iced Latte was okay. Expected a bit more flavor.,POSITIVE,1
 R001389,M0278,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001390,M0278,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001391,M0279,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001392,M0279,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001393,M0279,Best Iced Latte I've ever had. The flavor was incredible!,POSITIVE,1
-R001394,M0279,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001394,M0279,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001395,M0279,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001396,M0280,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001397,M0280,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001398,M0280,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001397,M0280,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001398,M0280,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001399,M0280,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001400,M0280,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001401,M0281,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001402,M0281,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001403,M0281,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001404,M0281,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001404,M0281,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001405,M0281,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001406,M0282,The Mint Lemonade was okay. Expected a bit more flavor.,NEUTRAL,0
+R001406,M0282,The Mint Lemonade was okay. Expected a bit more flavor.,POSITIVE,1
 R001407,M0282,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001408,M0282,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001408,M0282,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001409,M0282,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001410,M0282,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001411,M0283,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001411,M0283,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001412,M0283,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001413,M0283,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001414,M0283,Packaging was damaged and food quality was below average.,NEGATIVE,-1
@@ -1423,7 +1423,7 @@ R001421,M0285,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R001422,M0285,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001423,M0285,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001424,M0285,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001425,M0285,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001425,M0285,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001426,M0286,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001427,M0286,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001428,M0286,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1439,28 +1439,28 @@ R001437,M0288,The quality is consistently great. My go-to order every week.,POSI
 R001438,M0288,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001439,M0288,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001440,M0288,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001441,M0289,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001441,M0289,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001442,M0289,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001443,M0289,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001444,M0289,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001445,M0289,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001445,M0289,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001446,M0290,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001447,M0290,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001448,M0290,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001448,M0290,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001449,M0290,Best Watermelon Juice I've ever had. The flavor was incredible!,POSITIVE,1
-R001450,M0290,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001451,M0291,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001450,M0290,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001451,M0291,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001452,M0291,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001453,M0291,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001454,M0291,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001454,M0291,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001455,M0291,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001456,M0292,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001457,M0292,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001458,M0292,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001459,M0292,The Watermelon Juice was okay. Expected a bit more flavor.,NEUTRAL,0
+R001459,M0292,The Watermelon Juice was okay. Expected a bit more flavor.,POSITIVE,1
 R001460,M0292,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001461,M0293,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001462,M0293,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001462,M0293,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001463,M0293,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001464,M0293,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001465,M0293,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -1469,7 +1469,7 @@ R001467,M0294,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001468,M0294,Best Avocado Smoothie I've ever had. The flavor was incredible!,POSITIVE,1
 R001469,M0294,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001470,M0294,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001471,M0295,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001471,M0295,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001472,M0295,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001473,M0295,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001474,M0295,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -1485,7 +1485,7 @@ R001483,M0297,The quality is consistently great. My go-to order every week.,POSI
 R001484,M0297,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001485,M0297,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001486,M0298,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001487,M0298,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001487,M0298,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001488,M0298,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001489,M0298,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001490,M0298,The quality is consistently great. My go-to order every week.,POSITIVE,1
@@ -1494,71 +1494,71 @@ R001492,M0299,Amazing food! Delivered hot and fresh. Will definitely order again
 R001493,M0299,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001494,M0299,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001495,M0299,The Avocado Smoothie was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001496,M0300,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001496,M0300,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001497,M0300,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001498,M0300,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001499,M0300,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001499,M0300,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001500,M0300,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001501,M0301,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001502,M0301,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001503,M0301,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001504,M0301,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001503,M0301,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001504,M0301,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001505,M0301,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001506,M0302,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001507,M0302,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001508,M0302,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001508,M0302,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001509,M0302,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001510,M0302,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R001511,M0303,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001511,M0303,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001512,M0303,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001513,M0303,Best Strawberry Milkshake I've ever had. The flavor was incredible!,POSITIVE,1
 R001514,M0303,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001515,M0303,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R001516,M0304,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001517,M0304,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R001518,M0304,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001516,M0304,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001517,M0304,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R001518,M0304,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001519,M0304,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R001520,M0304,The Strawberry Milkshake was okay. Expected a bit more flavor.,NEUTRAL,0
-R001521,M0305,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001520,M0304,The Strawberry Milkshake was okay. Expected a bit more flavor.,POSITIVE,1
+R001521,M0305,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001522,M0305,Best Strawberry Milkshake I've ever had. The flavor was incredible!,POSITIVE,1
 R001523,M0305,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001524,M0305,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001525,M0305,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001525,M0305,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001526,M0306,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001527,M0306,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001528,M0306,The Strawberry Milkshake was okay. Expected a bit more flavor.,NEUTRAL,0
+R001528,M0306,The Strawberry Milkshake was okay. Expected a bit more flavor.,POSITIVE,1
 R001529,M0306,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001530,M0306,Best Strawberry Milkshake I've ever had. The flavor was incredible!,POSITIVE,1
-R001531,M0307,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001531,M0307,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001532,M0307,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001533,M0307,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001534,M0307,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001534,M0307,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001535,M0307,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001536,M0308,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001536,M0308,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001537,M0308,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001538,M0308,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
-R001539,M0308,The Hot Chocolate was okay. Expected a bit more flavor.,NEUTRAL,0
-R001540,M0308,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001539,M0308,The Hot Chocolate was okay. Expected a bit more flavor.,POSITIVE,1
+R001540,M0308,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001541,M0309,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001542,M0309,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001543,M0309,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001544,M0309,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001543,M0309,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001544,M0309,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001545,M0309,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001546,M0310,The Club Sandwich was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001547,M0310,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001548,M0310,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001549,M0310,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001550,M0310,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001551,M0311,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001550,M0310,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001551,M0311,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001552,M0311,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001553,M0311,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001554,M0311,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001555,M0311,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001555,M0311,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001556,M0312,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001557,M0312,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001558,M0312,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001559,M0312,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001560,M0312,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001560,M0312,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001561,M0313,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001562,M0313,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001563,M0313,The Grilled Cheese was cold on arrival. Very frustrating.,NEGATIVE,-1
@@ -1566,22 +1566,22 @@ R001564,M0313,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001565,M0313,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001566,M0314,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001567,M0314,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R001568,M0314,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001568,M0314,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001569,M0314,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001570,M0314,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
-R001571,M0315,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001571,M0315,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001572,M0315,The Grilled Cheese was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001573,M0315,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001573,M0315,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001574,M0315,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001575,M0315,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001576,M0316,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001577,M0316,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R001578,M0316,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001578,M0316,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001579,M0316,The Grilled Cheese was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001580,M0316,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001581,M0317,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001582,M0317,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001583,M0317,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001583,M0317,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001584,M0317,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001585,M0317,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001586,M0318,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
@@ -1592,7 +1592,7 @@ R001590,M0318,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001591,M0319,The Grilled Cheese was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001592,M0319,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001593,M0319,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001594,M0319,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001594,M0319,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001595,M0319,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001596,M0320,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001597,M0320,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
@@ -1602,7 +1602,7 @@ R001600,M0320,Portion was too small for the price. Won't order again.,NEGATIVE,-
 R001601,M0321,The Tuna Melt was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001602,M0321,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001603,M0321,Best Tuna Melt I've ever had. The flavor was incredible!,POSITIVE,1
-R001604,M0321,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001604,M0321,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001605,M0321,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001606,M0322,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001607,M0322,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
@@ -1618,13 +1618,13 @@ R001616,M0324,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001617,M0324,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001618,M0324,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001619,M0324,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001620,M0324,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001620,M0324,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001621,M0325,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001622,M0325,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001622,M0325,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001623,M0325,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001624,M0325,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001625,M0325,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001626,M0326,The Blt Sandwich was okay. Expected a bit more flavor.,NEUTRAL,0
+R001626,M0326,The Blt Sandwich was okay. Expected a bit more flavor.,POSITIVE,1
 R001627,M0326,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001628,M0326,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001629,M0326,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
@@ -1635,12 +1635,12 @@ R001633,M0327,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R001634,M0327,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001635,M0327,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001636,M0328,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001637,M0328,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001637,M0328,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001638,M0328,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001639,M0328,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001640,M0328,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001641,M0329,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001642,M0329,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001642,M0329,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001643,M0329,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001644,M0329,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001645,M0329,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
@@ -1653,7 +1653,7 @@ R001651,M0331,Fresh ingredients and perfectly cooked. Highly recommended!,POSITI
 R001652,M0331,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001653,M0331,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001654,M0331,Best Egg & Avocado Toast I've ever had. The flavor was incredible!,POSITIVE,1
-R001655,M0331,The Egg & Avocado Toast was okay. Expected a bit more flavor.,NEUTRAL,0
+R001655,M0331,The Egg & Avocado Toast was okay. Expected a bit more flavor.,POSITIVE,1
 R001656,M0332,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001657,M0332,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001658,M0332,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
@@ -1661,13 +1661,13 @@ R001659,M0332,Best Egg & Avocado Toast I've ever had. The flavor was incredible!
 R001660,M0332,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001661,M0333,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001662,M0333,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001663,M0333,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001664,M0333,The Egg & Avocado Toast was okay. Expected a bit more flavor.,NEUTRAL,0
+R001663,M0333,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001664,M0333,The Egg & Avocado Toast was okay. Expected a bit more flavor.,POSITIVE,1
 R001665,M0333,The Egg & Avocado Toast was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001666,M0334,Best Pastrami Sandwich I've ever had. The flavor was incredible!,POSITIVE,1
 R001667,M0334,The Pastrami Sandwich was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001668,M0334,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001669,M0334,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001669,M0334,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001670,M0334,Best Pastrami Sandwich I've ever had. The flavor was incredible!,POSITIVE,1
 R001671,M0335,The Pastrami Sandwich was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001672,M0335,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
@@ -1675,13 +1675,13 @@ R001673,M0335,Best Pastrami Sandwich I've ever had. The flavor was incredible!,P
 R001674,M0335,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001675,M0335,Best Pastrami Sandwich I've ever had. The flavor was incredible!,POSITIVE,1
 R001676,M0336,The quality is consistently great. My go-to order every week.,POSITIVE,1
-R001677,M0336,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001677,M0336,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001678,M0336,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001679,M0336,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001679,M0336,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001680,M0336,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001681,M0337,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001681,M0337,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001682,M0337,Best Pastrami Sandwich I've ever had. The flavor was incredible!,POSITIVE,1
-R001683,M0337,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001683,M0337,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001684,M0337,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001685,M0337,The Pastrami Sandwich was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001686,M0338,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1699,8 +1699,8 @@ R001697,M0340,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001698,M0340,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001699,M0340,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001700,M0340,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
-R001701,M0341,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
-R001702,M0341,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001701,M0341,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
+R001702,M0341,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001703,M0341,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001704,M0341,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001705,M0341,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
@@ -1712,20 +1712,20 @@ R001710,M0342,The quality is consistently great. My go-to order every week.,POSI
 R001711,M0343,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001712,M0343,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001713,M0343,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001714,M0343,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
-R001715,M0343,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001714,M0343,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
+R001715,M0343,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001716,M0344,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001717,M0344,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001718,M0344,Best French Onion Soup I've ever had. The flavor was incredible!,POSITIVE,1
 R001719,M0344,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001720,M0344,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001721,M0345,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001722,M0345,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001722,M0345,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001723,M0345,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001724,M0345,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001725,M0345,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001726,M0346,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001727,M0346,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001727,M0346,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001728,M0346,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001729,M0346,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001730,M0346,Portion was too small for the price. Won't order again.,NEGATIVE,-1
@@ -1739,14 +1739,14 @@ R001737,M0348,Best French Onion Soup I've ever had. The flavor was incredible!,P
 R001738,M0348,Best French Onion Soup I've ever had. The flavor was incredible!,POSITIVE,1
 R001739,M0348,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001740,M0348,Best French Onion Soup I've ever had. The flavor was incredible!,POSITIVE,1
-R001741,M0349,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
-R001742,M0349,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001743,M0349,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001741,M0349,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
+R001742,M0349,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001743,M0349,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001744,M0349,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001745,M0349,Loved every bite. The packaging was also excellent.,POSITIVE,1
-R001746,M0350,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001746,M0350,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001747,M0350,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001748,M0350,"Pretty good, I've had better but wouldn't say no to ordering again.",NEUTRAL,0
+R001748,M0350,"Pretty good, I've had better but wouldn't say no to ordering again.",NEGATIVE,-1
 R001749,M0350,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001750,M0350,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001751,M0351,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
@@ -1759,10 +1759,10 @@ R001757,M0352,Packaging was damaged and food quality was below average.,NEGATIVE
 R001758,M0352,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001759,M0352,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001760,M0352,Best Lentil Soup I've ever had. The flavor was incredible!,POSITIVE,1
-R001761,M0353,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001762,M0353,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001761,M0353,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001762,M0353,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001763,M0353,The taste was bland and the delivery was late.,NEGATIVE,-1
-R001764,M0353,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001764,M0353,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001765,M0353,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001766,M0354,The Lentil Soup was cold on arrival. Very frustrating.,NEGATIVE,-1
 R001767,M0354,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
@@ -1771,46 +1771,46 @@ R001769,M0354,Missing items from my order. Customer service was unhelpful.,NEGAT
 R001770,M0354,Best Lentil Soup I've ever had. The flavor was incredible!,POSITIVE,1
 R001771,M0355,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001772,M0355,Best Lentil Soup I've ever had. The flavor was incredible!,POSITIVE,1
-R001773,M0355,Good food overall but delivery took longer than expected.,NEUTRAL,0
-R001774,M0355,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001773,M0355,Good food overall but delivery took longer than expected.,NEGATIVE,-1
+R001774,M0355,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001775,M0355,Best Lentil Soup I've ever had. The flavor was incredible!,POSITIVE,1
 R001776,M0356,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
 R001777,M0356,Super fast delivery and the food was outstanding. 5 stars!,POSITIVE,1
 R001778,M0356,The Lentil Soup was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001779,M0356,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
+R001779,M0356,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
 R001780,M0356,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001781,M0357,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
-R001782,M0357,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001782,M0357,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001783,M0357,Packaging was damaged and food quality was below average.,NEGATIVE,-1
-R001784,M0357,Average portion size for the price. Food was warm but not hot.,NEUTRAL,0
+R001784,M0357,Average portion size for the price. Food was warm but not hot.,NEGATIVE,-1
 R001785,M0357,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001786,M0358,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001787,M0358,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
-R001788,M0358,"Decent taste, nothing extraordinary but satisfying.",NEUTRAL,0
-R001789,M0358,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001788,M0358,"Decent taste, nothing extraordinary but satisfying.",POSITIVE,1
+R001789,M0358,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001790,M0358,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001791,M0359,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
 R001792,M0359,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001793,M0359,Perfect seasoning and amazing presentation. Worth every penny.,POSITIVE,1
 R001794,M0359,Missing items from my order. Customer service was unhelpful.,NEGATIVE,-1
-R001795,M0359,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001795,M0359,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001796,M0360,Packaging was damaged and food quality was below average.,NEGATIVE,-1
 R001797,M0360,Loved every bite. The packaging was also excellent.,POSITIVE,1
 R001798,M0360,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001799,M0360,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001800,M0360,Best Mushroom Cream Soup I've ever had. The flavor was incredible!,POSITIVE,1
 R001801,M0361,Absolutely delicious. Generous portions and great value for money.,POSITIVE,1
-R001802,M0361,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001802,M0361,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001803,M0361,Exceeded my expectations. This is exactly what comfort food should taste like.,POSITIVE,1
 R001804,M0361,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
-R001805,M0361,Good food overall but delivery took longer than expected.,NEUTRAL,0
+R001805,M0361,Good food overall but delivery took longer than expected.,NEGATIVE,-1
 R001806,M0362,Fresh ingredients and perfectly cooked. Highly recommended!,POSITIVE,1
 R001807,M0362,Amazing food! Delivered hot and fresh. Will definitely order again.,POSITIVE,1
 R001808,M0362,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001809,M0362,The Mushroom Cream Soup was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001810,M0362,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001810,M0362,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001811,M0363,Portion was too small for the price. Won't order again.,NEGATIVE,-1
-R001812,M0363,The Seafood Chowder was okay. Expected a bit more flavor.,NEUTRAL,0
+R001812,M0363,The Seafood Chowder was okay. Expected a bit more flavor.,POSITIVE,1
 R001813,M0363,Portion was too small for the price. Won't order again.,NEGATIVE,-1
 R001814,M0363,The taste was bland and the delivery was late.,NEGATIVE,-1
 R001815,M0363,Best Seafood Chowder I've ever had. The flavor was incredible!,POSITIVE,1
@@ -1827,10 +1827,10 @@ R001825,M0365,The Seafood Chowder was cold on arrival. Very frustrating.,NEGATIV
 R001826,M0366,Disappointed with the quality. Not what I expected.,NEGATIVE,-1
 R001827,M0366,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
 R001828,M0366,The Seafood Chowder was cold on arrival. Very frustrating.,NEGATIVE,-1
-R001829,M0366,The Seafood Chowder was okay. Expected a bit more flavor.,NEUTRAL,0
+R001829,M0366,The Seafood Chowder was okay. Expected a bit more flavor.,POSITIVE,1
 R001830,M0366,The quality is consistently great. My go-to order every week.,POSITIVE,1
 R001831,M0367,Fantastic taste and quick delivery. Family loved it!,POSITIVE,1
-R001832,M0367,The Seafood Chowder was okay. Expected a bit more flavor.,NEUTRAL,0
+R001832,M0367,The Seafood Chowder was okay. Expected a bit more flavor.,POSITIVE,1
 R001833,M0367,The taste was bland and the delivery was late.,NEGATIVE,-1
-R001834,M0367,Food arrived on time but was slightly cold. Taste was fine.,NEUTRAL,0
+R001834,M0367,Food arrived on time but was slightly cold. Taste was fine.,POSITIVE,1
 R001835,M0367,The quality is consistently great. My go-to order every week.,POSITIVE,1
